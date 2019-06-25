@@ -1,0 +1,107 @@
+/* ---------------------- Section top-inner ---------------------- */
+section.top-inner {
+	padding-top: 70px;
+	position: relative;
+	height: 400px;
+
+
+	margin-bottom: -150px;
+	.bg{
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 1910px;
+		bottom: 0;
+		z-index: 1;
+	}
+	
+	.section-inner {
+		position: relative;
+		z-index: 2;
+	}
+	.title {
+		@include am-b;
+		font-size: 111px;
+		line-height: 111px;
+		color: #fab842;
+		margin: 0;
+		text-align: center;
+	}
+	.breadcrumbs {
+		text-align: center;
+		margin-top: 10px;
+	}
+	.line {
+		@include f-r;
+		font-size: 10px;
+		color: #fab842;
+		a, .breadcrumb_last {
+			font-size: 18px;
+		}
+		a {
+			@include f-r;
+			color: #fff;
+			margin: 0 5px;
+		}
+		.breadcrumb_last {
+			@include f-m;
+			color: #fff;
+			margin: 0 5px;
+		}
+	}
+
+	@media only screen and (max-width : $tw) {
+		padding-top: 35px;
+		height: 320px;
+		margin-bottom: -120px;
+		.title {
+			font-size: 80px;
+			line-height: 100px;
+		}
+
+	}
+	@media only screen and (max-width : $mw) {
+		.line {
+			a, .breadcrumb_last {
+				font-size: 16px;
+			}
+		}
+		padding-top: 25px;
+		height: 230px;
+		margin-bottom: 0px;
+		.title {
+			font-size: 60px;
+			line-height: 50px;
+		}
+	}
+}
+/* --------------------- /Section top-inner ---------------------- */
+
+/* ---------------------- Section about ---------------------- */
+section.about {
+
+	.title {
+		@include f-b;
+		font-size: 30px;
+		color: #d54b28;
+	}
+
+	.content {
+		@include f-r;
+		font-size: 18px;
+		color: #4f4f4f;
+		p {
+			margin-top: 20px;
+		}
+	}
+
+	@media only screen and (max-width : $mw) {
+		.title {
+			font-size: 24px;
+		}
+		.content {
+			font-size: 16px;
+		}
+	}
+}
+/* --------------------- /Section about ---------------------- */
