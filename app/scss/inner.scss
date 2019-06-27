@@ -79,15 +79,18 @@ section.top-inner {
 
 
 /* ---------------------- Section about ---------------------- */
-
 section.about {
+    
     text-align: center;
     .title {
         @include f-b;
         font-size: 30px;
         color: #d54b28;
+        text-align: right;
     }
+
     .content {
+        text-align: right;
         @include f-r;
         font-size: 18px;
         color: #4f4f4f;
@@ -95,17 +98,113 @@ section.about {
             margin-top: 20px;
         }
     }
-    @media only screen and (max-width: $mw) {
+
+    .dots {
+        margin: auto;
+        margin-top: 55px;
+    }
+
+    .boxes {
+        text-align: right;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        margin: -45px;
+        margin-bottom: -25px;
+        margin-top: 50px;
+
+        .box {
+            margin: 0 25px;
+            white-space: nowrap;
+            .icon, .info {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .info {
+                padding-right: 15px;
+                .line-1 {
+                    @include am-b;
+                    font-size: 35px;
+                    color: #4f4f4f;
+                }
+                .line-2 {
+                    @include f-r;
+                    font-size: 18px;
+                    color: #4f4f4f;
+                }
+            }
+        }
+
+        @media only screen and (max-width : $tw) {
+            margin-top: 35px;
+            padding: 15px;
+            .box {
+                margin: 0 15px;
+                .icon {
+                    img {
+                        max-width: 50px;
+                    }
+                }
+                .info {
+                    padding-right: 15px;
+                    .line-1 {
+                        font-size: 30px;
+                    }
+                    .line-2 {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width : $mw) {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            margin-top: 35px;
+            .box {
+                width: 46%;
+                margin: 2%;
+                text-align: center;
+
+                .info {
+                    text-align: right;
+                    white-space: normal;
+                    padding-left: 10px;
+                }
+            }
+        }
+
+        @media only screen and (max-width : 500px) {
+            .box {
+                width: 100%;
+                margin: 2%;
+                text-align: center;
+
+                .info {
+                    text-align: right;
+                    white-space: normal;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width : $mw) {
         .title {
             font-size: 24px;
         }
         .content {
             font-size: 16px;
         }
+
+        .dots {
+            margin-top: 35px;
+        }
     }
 }
-
-
 /* --------------------- /Section about ---------------------- */
 
 
