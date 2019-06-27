@@ -565,6 +565,28 @@ section.top-slider {
 					}
 				}
 			}
+
+			@media only screen and (max-width : $tw) {
+				margin-top: 35px;
+				padding: 15px;
+				.box {
+					margin: 0 15px;
+					.icon {
+						img {
+							max-width: 50px;
+						}
+					}
+					.info {
+						padding-right: 15px;
+						.line-1 {
+							font-size: 30px;
+						}
+						.line-2 {
+							font-size: 16px;
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -589,27 +611,7 @@ section.top-slider {
 				}
 			}
 
-			.boxes {
-				margin-top: 35px;
-				padding: 15px;
-				.box {
-					margin: 0 15px;
-					.icon {
-						img {
-							max-width: 50px;
-						}
-					}
-					.info {
-						padding-right: 15px;
-						.line-1 {
-							font-size: 30px;
-						}
-						.line-2 {
-							font-size: 16px;
-						}
-					}
-				}
-			}
+			
 		}
 	}
 

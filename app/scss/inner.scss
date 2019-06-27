@@ -79,19 +79,115 @@ section.top-inner {
 
 /* ---------------------- Section about ---------------------- */
 section.about {
-
+	
+	text-align: center;
 	.title {
 		@include f-b;
 		font-size: 30px;
 		color: #d54b28;
+		text-align: right;
 	}
 
 	.content {
+		text-align: right;
 		@include f-r;
 		font-size: 18px;
 		color: #4f4f4f;
 		p {
 			margin-top: 20px;
+		}
+	}
+
+	.dots {
+		margin: auto;
+		margin-top: 55px;
+	}
+
+	.boxes {
+		text-align: right;
+		background: #fff;
+		display: flex;
+		justify-content: space-between;
+		margin: -45px;
+		margin-bottom: -25px;
+		margin-top: 50px;
+
+		.box {
+			margin: 0 25px;
+			white-space: nowrap;
+			.icon, .info {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.info {
+				padding-right: 15px;
+				.line-1 {
+					@include am-b;
+					font-size: 35px;
+					color: #4f4f4f;
+				}
+				.line-2 {
+					@include f-r;
+					font-size: 18px;
+					color: #4f4f4f;
+				}
+			}
+		}
+
+		@media only screen and (max-width : $tw) {
+			margin-top: 35px;
+			padding: 15px;
+			.box {
+				margin: 0 15px;
+				.icon {
+					img {
+						max-width: 50px;
+					}
+				}
+				.info {
+					padding-right: 15px;
+					.line-1 {
+						font-size: 30px;
+					}
+					.line-2 {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+		@media only screen and (max-width : $mw) {
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 0;
+			padding: 0;
+			margin-top: 35px;
+			.box {
+				width: 46%;
+				margin: 2%;
+				text-align: center;
+
+				.info {
+					text-align: right;
+					white-space: normal;
+					padding-left: 10px;
+				}
+			}
+		}
+
+		@media only screen and (max-width : 500px) {
+			.box {
+				width: 100%;
+				margin: 2%;
+				text-align: center;
+
+				.info {
+					text-align: right;
+					white-space: normal;
+					padding-left: 10px;
+				}
+			}
 		}
 	}
 
@@ -102,6 +198,331 @@ section.about {
 		.content {
 			font-size: 16px;
 		}
+
+		.dots {
+			margin-top: 35px;
+		}
 	}
 }
 /* --------------------- /Section about ---------------------- */
+
+/* ---------------------- Section team ---------------------- */
+section.team {
+	margin-top: 35px;
+	padding-top: 35px;
+	padding-bottom: 125px;
+
+	.title {
+		@include am-b;
+		font-size: 60px;
+		color: #d54b28;
+		text-align: center;
+	}
+
+	.boxes {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 0;
+		margin: -15px;
+		margin-top: 80px;
+		.box {
+			width: 33.333%;
+			
+			margin: 0;
+			padding: 15px;
+			display: block;
+			position: relative;
+			overflow: visible;
+			transition: 0.5s;
+			&:hover {
+				transform: translateY(-25px);
+				.inner {
+					box-shadow: 0px 20px 45px 0px rgba(181, 181, 181, 0.5);
+				}
+			}
+			.inner {
+				overflow: hidden;
+				position: relative;
+				background: #f0f0f0;
+				border-radius: 10px;
+				padding-bottom: 100%;
+				transition: 0.5s;
+			}
+	
+			.info {
+				text-align: center;
+				margin-top: 45px;
+				.name {
+					@include am-b;
+					font-size: 40px;
+					color: #bf1e1d;
+				}
+
+				.role {
+					@include f-r;
+					font-size: 18px;
+					color: #383838;
+				}
+			}
+
+			.shape {
+				position: absolute;
+				left: 0;
+				top: 50%;
+			}
+
+			.image {
+				width: 100%;
+				img {
+					max-width: 90%;
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+
+			}
+		}
+	}
+
+	@media only screen and (max-width : $mw) {
+		.title {
+			font-size: 45px;
+		}
+
+		.boxes {
+			margin-top: 35px;
+			.box {
+			}
+		}
+	}
+
+	@media only screen and (max-width : 700px) {
+		padding-bottom: 45px;
+		.boxes {
+			justify-content: center;
+			.box {
+				width: 100%;
+				max-width: 300px;
+				.info {
+					margin-top: 25px;
+				}
+			}
+		}
+	}
+}
+/* --------------------- /Section team ---------------------- */
+
+/* ---------------------- Section slider-steps ---------------------- */
+
+@keyframes from-left {
+	0%   { opacity: 0; left: -30px;}
+  	100%  { opacity: 1; left: 0;}
+}
+
+section.slider-steps {
+	padding-bottom: 250px;
+	margin-top: 80px;
+	.section-inner {
+		max-width: 1100px;
+	}
+	.slider {
+		
+		position: relative;
+		.data {
+			display: none;
+		}
+
+		.slide {
+			border-radius: 10px;
+			background: #fff;
+			text-align: right;
+			position: relative;
+			overflow: hidden;
+			z-index: 2;
+			
+			height: 550px;
+			&.animated {
+				.image {
+					animation: from-left 1.5s forwards;
+					//animation-delay: 0.25s;
+				}
+
+				.text {
+					animation: from-right 1.5s forwards;
+				}					
+			}
+			.text {
+				width: 75%;
+				height: 100%;
+				position: relative;
+				z-index: 3;
+				padding: 70px;
+				.title {
+					@include am-b;
+					font-size: 60px;
+					line-height: 60px;
+					color: #4f4f4f;
+				}
+
+				.content {
+					@include f-r;
+					font-size: 18px;
+					color: #4f4f4f;
+					margin-top: 35px;
+				}
+
+				.number {
+					@include f-m;
+					font-size: 300px;
+					line-height: 230px;
+					color: #f2f2f2;
+					position: absolute;
+					right: -25px;
+					bottom: -25px;
+				}
+			}
+
+			.image-cover {
+				position: absolute;
+				left: 5%;
+				top: 0;
+				z-index: 2;
+				height: 100%;
+				img {
+					height: 100%;
+				}
+			}
+			
+			.image {
+				
+				text-align: left;
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 1;
+				opacity: 0;
+
+				max-width: 80%;
+				img {
+					max-width: 100%;
+				}
+			}
+		}
+
+		.arrows {
+			font-size: 35px;
+			color: #d54b29;
+			position: absolute;
+			z-index: 3;
+
+			bottom: 70px;
+			right: 70px;
+
+			div {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.sep {
+				width: 4px;
+				height: 15px;
+				background: #d54b29;
+				margin: 0 15px;
+			}
+
+			.arrow {
+				cursor: pointer;
+				transition: 0.5s;
+				&:hover {
+					color: #F3BA51;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width : $tw) {
+		padding-bottom: 150px;
+		.slider {
+			.slide {
+				height: 450px;
+				.text {
+					padding: 45px;
+					width: 80%;
+					.title {
+						font-size: 50px;
+						line-height: 50px;
+					}
+					.content {
+						font-size: 16px;
+						margin-top: 25px;
+					}
+					.number {
+						font-size: 170px;
+						line-height: 160px;
+					}
+				}
+			}
+
+			.arrows {
+				right: 45px;
+				bottom: 45px;
+			}
+		}
+	}
+
+	@media only screen and (max-width : 750px) {
+		.slider {
+			.slide {
+				height: 450px;
+				font-size: 0;
+				.text {
+					padding: 15px;
+					width: 90%;
+					.title {
+						font-size: 35px;
+						line-height: 35px;
+					}
+					.content {
+						margin-top: 15px;
+					}
+					.number {
+						font-size: 100px;
+						line-height: 80px;
+						right: -10px;
+						bottom: -10px;
+					}
+				}
+				.image-cover {
+					height: auto;
+					width: 100%;
+					left: 0;
+					top: auto;
+					bottom: 0;
+					text-align: left;
+					img {
+						height: 200px;
+					}
+				}
+				.image {
+					max-width: 100%;
+					top: auto;
+					bottom: 0;
+					img {
+						height: 200px;
+					}
+				}
+			}
+
+			.arrows {
+				right: 25px;
+				bottom: 95px;
+			}
+		}
+	}
+}
+/* --------------------- /Section slider-steps ---------------------- */
