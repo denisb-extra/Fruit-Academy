@@ -409,13 +409,13 @@ section.top-slider {
     z-index: 4;
     padding-top: 120px; }
     section.top-slider .section-inner .part-slider .title {
-      font-family: 'Amatic SC', cursive;
+      font-family: 'Amatic SC', Arial;
       font-weight: 700;
       font-size: 111px;
       line-height: 111px;
       color: #fab842; }
     section.top-slider .section-inner .part-slider .subtitle {
-      font-family: 'Amatic SC', cursive;
+      font-family: 'Amatic SC', Arial;
       font-weight: 400;
       font-size: 80px;
       line-height: 80px;
@@ -505,7 +505,7 @@ section.top-slider {
         section.top-slider .section-inner .boxes .box .info {
           padding-right: 15px; }
           section.top-slider .section-inner .boxes .box .info .line-1 {
-            font-family: 'Amatic SC', cursive;
+            font-family: 'Amatic SC', Arial;
             font-weight: 700;
             font-size: 35px;
             color: #4f4f4f; }
@@ -514,20 +514,7 @@ section.top-slider {
             font-weight: 400;
             font-size: 18px;
             color: #4f4f4f; }
-  @media only screen and (max-width: 1200px) {
-    section.top-slider {
-      height: 830px; }
-      section.top-slider .morph {
-        top: -206px;
-        right: -45px; }
-      section.top-slider .section-inner {
-        padding-top: 45px; }
-        section.top-slider .section-inner .part-slider .title {
-          font-size: 90px;
-          line-height: 90px; }
-        section.top-slider .section-inner .part-slider .subtitle {
-          font-size: 60px;
-          line-height: 60px; }
+      @media only screen and (max-width: 1200px) {
         section.top-slider .section-inner .boxes {
           margin-top: 35px;
           padding: 15px; }
@@ -541,6 +528,20 @@ section.top-slider {
                 font-size: 30px; }
               section.top-slider .section-inner .boxes .box .info .line-2 {
                 font-size: 16px; } }
+  @media only screen and (max-width: 1200px) {
+    section.top-slider {
+      height: 830px; }
+      section.top-slider .morph {
+        top: -206px;
+        right: -45px; }
+      section.top-slider .section-inner {
+        padding-top: 45px; }
+        section.top-slider .section-inner .part-slider .title {
+          font-size: 90px;
+          line-height: 90px; }
+        section.top-slider .section-inner .part-slider .subtitle {
+          font-size: 60px;
+          line-height: 60px; } }
   @media only screen and (max-width: 1000px) {
     section.top-slider {
       height: 700px; }
@@ -702,7 +703,7 @@ section.cats-and-feedback {
           transition: 0.5s;
           z-index: 2; }
           section.cats-and-feedback .part-cats .boxes .box .info .title {
-            font-family: 'Amatic SC', cursive;
+            font-family: 'Amatic SC', Arial;
             font-weight: 700;
             font-size: 35px;
             color: #fff; }
@@ -784,7 +785,7 @@ section.cats-and-feedback {
       section.cats-and-feedback .part-feedback .inner .part-top {
         text-align: center; }
         section.cats-and-feedback .part-feedback .inner .part-top .title {
-          font-family: 'Amatic SC', cursive;
+          font-family: 'Amatic SC', Arial;
           font-weight: 700;
           font-size: 60px;
           color: #4f4f4f; }
@@ -979,7 +980,7 @@ section.product-slider {
     position: relative;
     z-index: 4; }
   section.product-slider .title {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', Arial;
     font-weight: 700;
     font-size: 60px;
     color: #fff;
@@ -1042,7 +1043,7 @@ section.product-slider {
         overflow: hidden;
         height: 100%; }
       section.product-slider .slider .box .title {
-        font-family: 'Amatic SC', cursive;
+        font-family: 'Amatic SC', Arial;
         font-weight: 700;
         font-size: 46px;
         line-height: 46px;
@@ -1209,7 +1210,7 @@ section.home-bottom {
     display: -ms-flexbox;
     display: flex; }
     section.home-bottom .parts .title {
-      font-family: 'Amatic SC', cursive;
+      font-family: 'Amatic SC', Arial;
       font-weight: 700;
       font-size: 60px;
       line-height: 65px;
@@ -1285,7 +1286,7 @@ section.home-bottom {
           section.home-bottom .parts .part-middle .slider .slide .text {
             width: 50%; }
             section.home-bottom .parts .part-middle .slider .slide .text .title {
-              font-family: 'Amatic SC', cursive;
+              font-family: 'Amatic SC', Arial;
               font-weight: 700;
               font-size: 35px;
               color: #4f4f4f; }
@@ -1445,7 +1446,7 @@ footer {
       color: #4f4f4f;
       white-space: normal; }
       footer .bar-form .content .title {
-        font-family: 'Amatic SC', cursive;
+        font-family: 'Amatic SC', Arial;
         font-weight: 700;
         font-size: 60px; }
       footer .bar-form .content .subtitle {
@@ -1529,7 +1530,7 @@ footer {
         font-weight: 500;
         font-size: 18px; }
       footer .cols .col.contact .title {
-        font-family: 'Amatic SC', cursive;
+        font-family: 'Amatic SC', Arial;
         font-weight: 700;
         font-size: 60px; }
       footer .cols .col.contact .content {
@@ -1540,7 +1541,7 @@ footer {
         border-radius: 10px;
         background: #ffffff;
         padding: 5px;
-        font-family: 'Amatic SC', cursive;
+        font-family: 'Amatic SC', Arial;
         font-weight: 700;
         font-size: 35px;
         display: inline-block;
@@ -1665,7 +1666,7 @@ section.top-inner {
     position: relative;
     z-index: 2; }
   section.top-inner .title {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', Arial;
     font-weight: 700;
     font-size: 111px;
     line-height: 111px;
@@ -1715,25 +1716,103 @@ section.top-inner {
 
 /* --------------------- /Section top-inner ---------------------- */
 /* ---------------------- Section about ---------------------- */
-section.about .title {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  color: #d54b28; }
-
-section.about .content {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: #4f4f4f; }
-  section.about .content p {
-    margin-top: 20px; }
-
-@media only screen and (max-width: 1000px) {
+section.about {
+  text-align: center; }
   section.about .title {
-    font-size: 24px; }
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #d54b28;
+    text-align: right; }
   section.about .content {
-    font-size: 16px; } }
+    text-align: right;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4f4f4f; }
+    section.about .content p {
+      margin-top: 20px; }
+  section.about .dots {
+    margin: auto;
+    margin-top: 55px; }
+  section.about .boxes {
+    text-align: right;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: -45px;
+    margin-bottom: -25px;
+    margin-top: 50px; }
+    section.about .boxes .box {
+      margin: 0 25px;
+      white-space: nowrap; }
+      section.about .boxes .box .icon, section.about .boxes .box .info {
+        display: inline-block;
+        vertical-align: middle; }
+      section.about .boxes .box .info {
+        padding-right: 15px; }
+        section.about .boxes .box .info .line-1 {
+          font-family: 'Amatic SC', Arial;
+          font-weight: 700;
+          font-size: 35px;
+          color: #4f4f4f; }
+        section.about .boxes .box .info .line-2 {
+          font-family: 'Rubik', sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          color: #4f4f4f; }
+    @media only screen and (max-width: 1200px) {
+      section.about .boxes {
+        margin-top: 35px;
+        padding: 15px; }
+        section.about .boxes .box {
+          margin: 0 15px; }
+          section.about .boxes .box .icon img {
+            max-width: 50px; }
+          section.about .boxes .box .info {
+            padding-right: 15px; }
+            section.about .boxes .box .info .line-1 {
+              font-size: 30px; }
+            section.about .boxes .box .info .line-2 {
+              font-size: 16px; } }
+    @media only screen and (max-width: 1000px) {
+      section.about .boxes {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 35px; }
+        section.about .boxes .box {
+          width: 46%;
+          margin: 2%;
+          text-align: center; }
+          section.about .boxes .box .info {
+            text-align: right;
+            white-space: normal;
+            padding-left: 10px; } }
+    @media only screen and (max-width: 500px) {
+      section.about .boxes .box {
+        width: 100%;
+        margin: 2%;
+        text-align: center; }
+        section.about .boxes .box .info {
+          text-align: right;
+          white-space: normal;
+          padding-left: 10px; } }
+  @media only screen and (max-width: 1000px) {
+    section.about .title {
+      font-size: 24px; }
+    section.about .content {
+      font-size: 16px; }
+    section.about .dots {
+      margin-top: 35px; } }
 
 /* --------------------- /Section about ---------------------- */
 /* ---------------------- Section dots ---------------------- */
@@ -2113,7 +2192,7 @@ section.more-article .holder {
       z-index: 2;
       width: 80px; }
     .red-section.blog .more .title {
-      font-family: 'Amatic SC', cursive;
+      font-family: 'Amatic SC', Arial;
       font-weight: 700;
       font-size: 60px;
       color: #f1ae39;
@@ -2175,6 +2254,7 @@ section.shipment .title {
   text-align: center; }
 
 section.shipment .content {
+  text-align: right;
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -2247,6 +2327,264 @@ section.shipment .prices .holder {
   section.shipment .title {
     font-size: 24px; }
   section.shipment .content {
-    font-size: 16px; } }
+    font-size: 16px; }
+  section.shipment .dots {
+    margin-top: 35px; } }
 
+/* --------------------- /Section about ---------------------- */
+/* ---------------------- Section team ---------------------- */
+section.team {
+  margin-top: 35px;
+  padding-top: 35px;
+  padding-bottom: 125px; }
+  section.team .title {
+    font-family: 'Amatic SC', Arial;
+    font-weight: 700;
+    font-size: 60px;
+    color: #d54b28;
+    text-align: center; }
+  section.team .boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 0;
+    margin: -15px;
+    margin-top: 80px; }
+    section.team .boxes .box {
+      width: 33.333%;
+      margin: 0;
+      padding: 15px;
+      display: block;
+      position: relative;
+      overflow: visible;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+      section.team .boxes .box:hover {
+        -webkit-transform: translateY(-25px);
+                transform: translateY(-25px); }
+        section.team .boxes .box:hover .inner {
+          -webkit-box-shadow: 0px 20px 45px 0px rgba(181, 181, 181, 0.5);
+                  box-shadow: 0px 20px 45px 0px rgba(181, 181, 181, 0.5); }
+      section.team .boxes .box .inner {
+        overflow: hidden;
+        position: relative;
+        background: #f0f0f0;
+        border-radius: 10px;
+        padding-bottom: 100%;
+        -webkit-transition: 0.5s;
+        transition: 0.5s; }
+      section.team .boxes .box .info {
+        text-align: center;
+        margin-top: 45px; }
+        section.team .boxes .box .info .name {
+          font-family: 'Amatic SC', Arial;
+          font-weight: 700;
+          font-size: 40px;
+          color: #bf1e1d; }
+        section.team .boxes .box .info .role {
+          font-family: 'Rubik', sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          color: #383838; }
+      section.team .boxes .box .shape {
+        position: absolute;
+        left: 0;
+        top: 50%; }
+      section.team .boxes .box .image {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+        section.team .boxes .box .image img {
+          max-width: 90%;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%); }
+  @media only screen and (max-width: 1000px) {
+    section.team .title {
+      font-size: 45px; }
+    section.team .boxes {
+      margin-top: 35px; } }
+  @media only screen and (max-width: 700px) {
+    section.team {
+      padding-bottom: 45px; }
+      section.team .boxes {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        section.team .boxes .box {
+          width: 100%;
+          max-width: 300px; }
+          section.team .boxes .box .info {
+            margin-top: 25px; } }
+
+/* --------------------- /Section team ---------------------- */
+/* ---------------------- Section slider-steps ---------------------- */
+@-webkit-keyframes from-left {
+  0% {
+    opacity: 0;
+    left: -30px; }
+  100% {
+    opacity: 1;
+    left: 0; } }
+@keyframes from-left {
+  0% {
+    opacity: 0;
+    left: -30px; }
+  100% {
+    opacity: 1;
+    left: 0; } }
+
+section.slider-steps {
+  padding-bottom: 250px;
+  margin-top: 80px; }
+  section.slider-steps .section-inner {
+    max-width: 1100px; }
+  section.slider-steps .slider {
+    position: relative; }
+    section.slider-steps .slider .data {
+      display: none; }
+    section.slider-steps .slider .slide {
+      border-radius: 10px;
+      background: #fff;
+      text-align: right;
+      position: relative;
+      overflow: hidden;
+      z-index: 2;
+      height: 550px; }
+      section.slider-steps .slider .slide.animated .image {
+        -webkit-animation: from-left 1.5s forwards;
+                animation: from-left 1.5s forwards; }
+      section.slider-steps .slider .slide.animated .text {
+        -webkit-animation: from-right 1.5s forwards;
+                animation: from-right 1.5s forwards; }
+      section.slider-steps .slider .slide .text {
+        width: 75%;
+        height: 100%;
+        position: relative;
+        z-index: 3;
+        padding: 70px; }
+        section.slider-steps .slider .slide .text .title {
+          font-family: 'Amatic SC', Arial;
+          font-weight: 700;
+          font-size: 60px;
+          line-height: 60px;
+          color: #4f4f4f; }
+        section.slider-steps .slider .slide .text .content {
+          font-family: 'Rubik', sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          color: #4f4f4f;
+          margin-top: 35px; }
+        section.slider-steps .slider .slide .text .number {
+          font-family: 'Rubik', sans-serif;
+          font-weight: 500;
+          font-size: 300px;
+          line-height: 230px;
+          color: #f2f2f2;
+          position: absolute;
+          right: -25px;
+          bottom: -25px; }
+      section.slider-steps .slider .slide .image-cover {
+        position: absolute;
+        left: 5%;
+        top: 0;
+        z-index: 2;
+        height: 100%; }
+        section.slider-steps .slider .slide .image-cover img {
+          height: 100%; }
+      section.slider-steps .slider .slide .image {
+        text-align: left;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        opacity: 0;
+        max-width: 80%; }
+        section.slider-steps .slider .slide .image img {
+          max-width: 100%; }
+    section.slider-steps .slider .arrows {
+      font-size: 35px;
+      color: #d54b29;
+      position: absolute;
+      z-index: 3;
+      bottom: 70px;
+      right: 70px; }
+      section.slider-steps .slider .arrows div {
+        display: inline-block;
+        vertical-align: middle; }
+      section.slider-steps .slider .arrows .sep {
+        width: 4px;
+        height: 15px;
+        background: #d54b29;
+        margin: 0 15px; }
+      section.slider-steps .slider .arrows .arrow {
+        cursor: pointer;
+        -webkit-transition: 0.5s;
+        transition: 0.5s; }
+        section.slider-steps .slider .arrows .arrow:hover {
+          color: #F3BA51; }
+  @media only screen and (max-width: 1200px) {
+    section.slider-steps {
+      padding-bottom: 150px; }
+      section.slider-steps .slider .slide {
+        height: 450px; }
+        section.slider-steps .slider .slide .text {
+          padding: 45px;
+          width: 80%; }
+          section.slider-steps .slider .slide .text .title {
+            font-size: 50px;
+            line-height: 50px; }
+          section.slider-steps .slider .slide .text .content {
+            font-size: 16px;
+            margin-top: 25px; }
+          section.slider-steps .slider .slide .text .number {
+            font-size: 170px;
+            line-height: 160px; }
+      section.slider-steps .slider .arrows {
+        right: 45px;
+        bottom: 45px; } }
+  @media only screen and (max-width: 750px) {
+    section.slider-steps .slider .slide {
+      height: 450px;
+      font-size: 0; }
+      section.slider-steps .slider .slide .text {
+        padding: 15px;
+        width: 90%; }
+        section.slider-steps .slider .slide .text .title {
+          font-size: 35px;
+          line-height: 35px; }
+        section.slider-steps .slider .slide .text .content {
+          margin-top: 15px; }
+        section.slider-steps .slider .slide .text .number {
+          font-size: 100px;
+          line-height: 80px;
+          right: -10px;
+          bottom: -10px; }
+      section.slider-steps .slider .slide .image-cover {
+        height: auto;
+        width: 100%;
+        left: 0;
+        top: auto;
+        bottom: 0;
+        text-align: left; }
+        section.slider-steps .slider .slide .image-cover img {
+          height: 200px; }
+      section.slider-steps .slider .slide .image {
+        max-width: 100%;
+        top: auto;
+        bottom: 0; }
+        section.slider-steps .slider .slide .image img {
+          height: 200px; }
+    section.slider-steps .slider .arrows {
+      right: 25px;
+      bottom: 95px; } }
+
+/* --------------------- /Section slider-steps ---------------------- */
 /* --------------------- /Section shipment ---------------------- */
