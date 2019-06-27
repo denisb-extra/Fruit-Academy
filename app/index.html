@@ -213,7 +213,7 @@
 							<div class="inner">
 								<div class="bg-img"><img src="images/index/top-slider/product-slider/product-3.png" alt=""></div>
 								<div class="info">
-									<p class="title">תיבת תענוגות</p>
+									<p class="title">סלסלת פירות</p>
 									<p class="subtitle">החל מ- 240 ₪</p>
 									<div class="products">
 										<div class="product">
@@ -241,7 +241,7 @@
 							<div class="inner">
 								<div class="bg-img"><img src="images/index\categories/2.png" alt=""></div>
 								<div class="info">
-									<p class="title">תיבת תענוגות</p>
+									<p class="title">מגשי פירות</p>
 									<p class="subtitle">החל מ- 240 ₪</p>
 									<div class="products">
 										<div class="product">
@@ -269,7 +269,7 @@
 							<div class="inner">
 								<div class="bg-img"><img src="images/index\categories/3.png" alt=""></div>
 								<div class="info">
-									<p class="title">תיבת תענוגות</p>
+									<p class="title">זרי פירות</p>
 									<p class="subtitle">החל מ- 240 ₪</p>
 									<div class="products">
 										<div class="product">
@@ -365,7 +365,7 @@
 								</div>
 								<div class="thumb">
 									<img src="images/index/feedback/avatars/6.jpg" alt="">
-									<<div class="data">
+									<div class="data">
 										<div class="text">
 											<p class="txt">גרמתם לבעלי להתרגש וזה לא דבר שקל לעשות, הוא סיפר לי שהוא הופתע ממש וכל החבר'ה מהעבודה התענגו על המגש פירות שלכם.</p>
 											<p class="name">מור אוריהל, האופה מבגדד 2</p>
@@ -599,6 +599,9 @@
 
 						<div class="slider">
 							<div class="slide">
+								<div class="image">
+									<img src="images/index/bottom/fruits/1.jpg" alt="">
+								</div>
 								<div class="text">
 									<div class="title">פיטאייה</div>
 									<p class="content">
@@ -613,9 +616,7 @@
 										<li>ויטמין F</li>
 									</ul>
 								</div>
-								<div class="image">
-									<img src="images/index/bottom/fruits/1.jpg" alt="">
-								</div>
+								
 							</div>
 
 							<div class="arrows">
@@ -825,6 +826,7 @@
 
 	<script>
 		$(document).ready(function ($) {
+
 			VanillaTilt.init(document.querySelector(".woman"), {
 				"full-page-listening" : true,
 				max: 5,
@@ -842,10 +844,16 @@
 				autoplay: false,
 				responsive : {
 					0 : {
-					   items : 5
+					   items : 1
+					},
+					550 : {
+					   items : 2 
 					},
 					700 : {
-					   items : 5 
+					   items : 3 
+					},
+					1000 : {
+					   items : 4 
 					},
 					1200 : {
 					   items : 5 
@@ -859,9 +867,9 @@
 			$( ".feedback").sliderThumbs({delay: 5000});
 
 			$( ".home-bottom .slider").sliderImgTxt({delay: 5000});
-			
 
 		});
+
 
 		
 	</script>
