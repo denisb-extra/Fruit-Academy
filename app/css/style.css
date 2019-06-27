@@ -1827,6 +1827,9 @@ section.dots .section-inner {
 
 /* --------------------- /Section dots ---------------------- */
 /* ---------------------- Section blog ---------------------- */
+section.blog .section-inner {
+  margin-bottom: 135px; }
+
 section.blog .boxes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1952,6 +1955,7 @@ section.blog .pagination {
   width: 100%;
   text-align: center;
   margin: auto;
+  margin-top: -20px;
   padding: 0px 0px 0px 0px; }
   section.blog .pagination a {
     color: black;
@@ -1959,6 +1963,11 @@ section.blog .pagination {
     text-decoration: none; }
 
 @media only screen and (max-width: 1250px) {
+  section.blog .section-inner {
+    margin-bottom: 105px; }
+  section.blog .pagination {
+    margin-top: 0px;
+    padding: 30px 0px 0px 0px; }
   section.blog .boxes {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1984,13 +1993,13 @@ section.blog .pagination {
 
 @media only screen and (max-width: 1024px) {
   section.blog .boxes .box {
-    width: 46%;
+    width: 30%;
     height: 400px; } }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   section.blog .boxes .box {
-    width: 100%;
-    height: 450px; }
+    width: 300px;
+    height: 400px; }
   section.blog .pagination a {
     padding: 8px 10px; } }
 
@@ -2097,20 +2106,28 @@ section.article .image {
     margin: auto;
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    float: inherit; }
+    section.article .image img {
+      width: 100%; }
   section.article .share {
-    position: absolute;
-    left: 10px;
-    top: 0px; }
+    position: relative;
+    width: 100%;
+    left: 0px;
+    top: -10px;
+    text-align: left; }
   section.article .popup .holder {
-    top: -58px; } }
+    top: -58px;
+    left: 10px; } }
 
 /* --------------------- /Section article ---------------------- */
 /* ---------------------- Section more-article ---------------------- */
+section.more-article .section-inner {
+  margin-bottom: 100px; }
+
 section.more-article .holder {
   text-align: center;
-  margin-top: 70px;
-  margin-bottom: 100px; }
+  margin-top: 70px; }
   section.more-article .holder .next-article,
   section.more-article .holder .back-article,
   section.more-article .holder .line {
@@ -2119,27 +2136,33 @@ section.more-article .holder {
     font-weight: 700;
     font-size: 30px;
     color: #4f4f4f; }
-  section.more-article .holder .next-article .arrow {
-    border: solid #b21f24;
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 5px;
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg);
-    margin-right: 20px;
-    position: relative;
-    top: -2px; }
-  section.more-article .holder .back-article .arrow {
-    border: solid #b21f24;
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 5px;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    margin-left: 20px;
-    line-height: 5px;
-    position: relative;
-    top: -2px; }
+  section.more-article .holder .next-article {
+    text-align: right;
+    width: 400px; }
+    section.more-article .holder .next-article .arrow {
+      border: solid #b21f24;
+      border-width: 0 5px 5px 0;
+      display: inline-block;
+      padding: 5px;
+      -webkit-transform: rotate(135deg);
+      transform: rotate(135deg);
+      margin-right: 20px;
+      position: relative;
+      top: -2px; }
+  section.more-article .holder .back-article {
+    text-align: left;
+    width: 400px; }
+    section.more-article .holder .back-article .arrow {
+      border: solid #b21f24;
+      border-width: 0 5px 5px 0;
+      display: inline-block;
+      padding: 5px;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      margin-left: 20px;
+      line-height: 5px;
+      position: relative;
+      top: -2px; }
   section.more-article .holder .line {
     font-size: 15px;
     color: #b12024;
@@ -2148,6 +2171,46 @@ section.more-article .holder {
     position: relative;
     bottom: 4px;
     margin: 0px 30px; }
+
+@media only screen and (max-width: 1000px) {
+  section.more-article .section-inner {
+    margin-bottom: 30px; }
+  section.more-article .holder {
+    text-align: center;
+    margin-top: 30px; }
+    section.more-article .holder .next-article {
+      width: 45%; }
+      section.more-article .holder .next-article .arrow {
+        border: solid #b21f24;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+        margin-right: 20px;
+        position: relative;
+        top: 0px; }
+    section.more-article .holder .back-article {
+      width: 45%; }
+      section.more-article .holder .back-article .arrow {
+        border: solid #b21f24;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        margin-left: 20px;
+        line-height: 5px;
+        position: relative;
+        top: 0px; }
+    section.more-article .holder .next-article,
+    section.more-article .holder .back-article,
+    section.more-article .holder .line {
+      font-size: 16px; }
+    section.more-article .holder .line {
+      bottom: 0px;
+      margin: 0px 5px;
+      font-size: 10px; } }
 
 /* --------------------- /Section more-article ---------------------- */
 .red-section.blog {
@@ -2231,6 +2294,17 @@ section.more-article .holder {
     position: relative;
     padding: 45px 45px 35px 45px;
     width: 100%; }
+  @media only screen and (max-width: 1200px) {
+    .red-section.blog .more {
+      position: relative; }
+      .red-section.blog .more:nth-child(odd) {
+        margin-left: 15px;
+        margin-right: 15px; }
+      .red-section.blog .more:nth-child(even) {
+        margin-right: 15px;
+        margin-left: 15px; }
+    .red-section.blog .inner {
+      padding: 15px 15px 35px 15px; } }
   @media only screen and (max-width: 1000px) {
     .red-section.blog .holder {
       -webkit-box-orient: vertical;
@@ -2240,9 +2314,21 @@ section.more-article .holder {
       .red-section.blog .holder .more {
         margin: auto;
         width: 100%;
-        margin-bottom: 80px; } }
+        margin-bottom: 80px; }
+        .red-section.blog .holder .more .title {
+          font-size: 35px; }
+    .red-section.blog .inner {
+      padding: 25px 15px 35px 15px; }
+    .red-section.blog .right-dots {
+      display: none; }
+    .red-section.blog .down-dots {
+      right: 6px;
+      width: 95%; } }
 
 /* ---------------------- Section shipment ---------------------- */
+section.shipment .section-inner {
+  margin-bottom: 100px; }
+
 section.shipment .wrapper-corners-shadow {
   position: relative; }
 
@@ -2254,7 +2340,6 @@ section.shipment .title {
   text-align: center; }
 
 section.shipment .content {
-  text-align: right;
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -2307,6 +2392,14 @@ section.shipment .prices .title {
   margin-top: 100px;
   margin-bottom: 30px; }
 
+section.shipment .prices .sub-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #4f4f4f;
+  text-align: center;
+  margin-top: 70px; }
+
 section.shipment .prices .holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2324,12 +2417,42 @@ section.shipment .prices .holder {
     padding: 20px 0px; }
 
 @media only screen and (max-width: 1000px) {
+  section.shipment .section-inner {
+    margin-bottom: 40px; }
   section.shipment .title {
     font-size: 24px; }
   section.shipment .content {
     font-size: 16px; }
-  section.shipment .dots {
-    margin-top: 35px; } }
+  section.shipment .filter .holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px; }
+    section.shipment .filter .holder .item {
+      padding: 20px 35px;
+      text-align: center; }
+  section.shipment .prices .title {
+    padding: 0px 0px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center; }
+  section.shipment .prices .sub-title {
+    font-size: 24px;
+    margin-top: 30px; }
+  section.shipment .prices .holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px 0px; }
+    section.shipment .prices .holder .col {
+      width: 100%;
+      text-align: center; } }
 
 /* --------------------- /Section about ---------------------- */
 /* ---------------------- Section team ---------------------- */
