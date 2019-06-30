@@ -1,3 +1,172 @@
+/* -------------------- Global ------------------------ */
+
+.box.product {
+	display: inline-block;
+	text-align: center;
+	height: 370px;
+	.inner {
+		background: #fff;
+		border-radius: 10px;
+		padding: 15px;
+		position: relative;
+		overflow: hidden;
+		height: 100%;
+	}
+	.title {
+		@include am-b;
+		font-size: 46px;
+		line-height: 46px;
+		color: #bf1e1d;
+	}
+
+	.image {
+		margin-top: 20px;
+		transition: 0.5s;
+		transform-origin: top center;
+		text-align: center;
+		img {
+			max-width: 100%;
+			margin: auto;
+		}
+	}
+
+	.part-bottom {
+		margin-top: 15px;
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		right: 0;
+		opacity: 1;
+		transition: 0.5s;
+		.price {
+			@include f-m;
+			font-size: 18px;
+			color: #6d6d6d;
+		}
+		.circle {
+			width: 13px;
+			height: 13px;
+			display: inline-block;
+			margin: auto;
+			background: #87d559;
+			border-radius: 100%;
+			margin-top: 10px;
+		}
+
+		.fast {
+			@include f-b;
+			font-size: 18px;
+			color: #c8302c;
+			margin-top: 5px;
+		}
+	}
+
+	&:hover {
+		.image {
+			transform: scale(0.65);
+		}
+		.part-bottom {
+			opacity: 0;
+			bottom: -50px;
+		}
+		.part-add {
+			bottom: 0;
+			opacity: 1;
+		}
+	}
+
+	.part-add {
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: -100px;
+		opacity: 0;
+
+		padding: 5px;
+		background: #fff;
+		transition: 0.5s;
+		select {
+			@include f-r;
+			font-size: 18px;
+			color: #4f4f4f;
+			
+			border: none;
+			border-radius: 10px;
+			width: 100%;
+			padding: 10px;
+			outline: none;
+			-webkit-appearance: none;
+			background: url(../images/icons/ar-d-s.png) no-repeat left 10px center;
+			background-color: #f3f3f3;
+		}
+
+		.price {
+			@include f-b;
+			font-size: 18px;
+			color: #4f4f4f;
+			margin-top: 10px;
+			.number {
+				color: #c8362c;
+			}
+		}
+
+		.buttons {
+			font-size: 0;
+			margin-top: 15px;
+			a {
+				display: inline-block;
+				vertical-align: middle;
+				background: #c8332c;
+				color: #fff;
+				padding: 10px 5px;
+				border-radius: 10px;
+				margin: 1%;
+				width: 48%;
+				@include f-m;
+				font-size: 16px;
+				color: #fff;
+				.plus {
+					color: #fab842;
+				}
+
+				&.watch {
+					background: #fda82a;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width : $tw) {
+		height: 300px;
+		.inner {
+			padding: 10px;
+		}
+		.title {
+			font-size: 35px;
+			line-height: 35px;
+		}
+		.part-bottom {
+			.price {
+				font-size: 16px;
+			}
+		}
+
+		.part-add {
+			.buttons {
+				a {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width : 550px) {
+		height: 320px;
+	}
+}
+/* -------------------- Global ------------------------ */
+
+
 /* ---------------------- header ---------------------- */
 header {
 	height: 80px;
@@ -44,6 +213,7 @@ header {
 		.logo {
 			position: relative;
 			padding-right: 115px;
+			display: block;
 			.image {
 				position: absolute;
 				right: 0;
@@ -1242,169 +1412,12 @@ section.product-slider {
 
 
 		}
-		.box {
-			display: inline-block;
-			text-align: center;
-			height: 350px;
-			.inner {
-				background: #fff;
-				border-radius: 10px;
-				padding: 15px;
-				position: relative;
-				overflow: hidden;
-				height: 100%;
-			}
-			.title {
-				@include am-b;
-				font-size: 46px;
-				line-height: 46px;
-				color: #bf1e1d;
-			}
-
-			.image {
-				margin-top: 20px;
-				transition: 0.5s;
-				transform-origin: top center;
-			}
-
-			.part-bottom {
-				margin-top: 15px;
-				position: absolute;
-				bottom: 10px;
-				left: 0;
-				right: 0;
-				opacity: 1;
-				transition: 0.5s;
-				.price {
-					@include f-m;
-					font-size: 18px;
-					color: #6d6d6d;
-				}
-				.circle {
-					width: 13px;
-					height: 13px;
-					display: inline-block;
-					margin: auto;
-					background: #87d559;
-					border-radius: 100%;
-					margin-top: 10px;
-				}
-
-				.fast {
-					@include f-b;
-					font-size: 18px;
-					color: #c8302c;
-					margin-top: 5px;
-				}
-			}
-
-			&:hover {
-				.image {
-					transform: scale(0.65);
-				}
-				.part-bottom {
-					opacity: 0;
-					bottom: -50px;
-				}
-				.part-add {
-					bottom: 0;
-					opacity: 1;
-				}
-			}
-
-			.part-add {
-				position: absolute;
-				right: 0;
-				left: 0;
-				bottom: -100px;
-				opacity: 0;
-
-				padding: 5px;
-				background: #fff;
-				transition: 0.5s;
-				select {
-					@include f-r;
-					font-size: 18px;
-					color: #4f4f4f;
-					
-					border: none;
-					border-radius: 10px;
-					width: 100%;
-					padding: 10px;
-					outline: none;
-					-webkit-appearance: none;
-					background: url(../images/icons/ar-d-s.png) no-repeat left 10px center;
-					background-color: #f3f3f3;
-				}
-
-				.price {
-					@include f-b;
-					font-size: 18px;
-					color: #4f4f4f;
-					margin-top: 10px;
-					.number {
-						color: #c8362c;
-					}
-				}
-
-				.buttons {
-					font-size: 0;
-					margin-top: 15px;
-					a {
-						display: inline-block;
-						vertical-align: middle;
-						background: #c8332c;
-						color: #fff;
-						padding: 10px 5px;
-						border-radius: 10px;
-						margin: 1%;
-						width: 48%;
-						@include f-m;
-						font-size: 16px;
-						color: #fff;
-						.plus {
-							color: #fab842;
-						}
-
-						&.watch {
-							background: #fda82a;
-						}
-					}
-				}
-			}
-		}
 	}
 
 	@media only screen and (max-width : $tw) {
 		.title {
 			font-size: 50px;
 			line-height: 60px;
-		}
-
-		.slider {
-			.box {
-				height: 300px;
-				.inner {
-					padding: 10px;
-				}
-				.title {
-					font-size: 35px;
-					line-height: 35px;
-				}
-				.part-bottom {
-					.price {
-						font-size: 16px;
-					}
-				}
-
-				.part-add {
-					.buttons {
-						a {
-							font-size: 14px;
-						}
-					}
-				}
-			}
 		}
 	}
 
@@ -1431,11 +1444,6 @@ section.product-slider {
 			font-size: 16px;
 			margin-top: 20px;
 
-		}
-		.slider {
-			.box {
-				height: 320px;
-			}
 		}
 	}
 }
