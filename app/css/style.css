@@ -1750,7 +1750,8 @@ section.about {
     section.about .boxes .box {
       margin: 0 25px;
       white-space: nowrap; }
-      section.about .boxes .box .icon, section.about .boxes .box .info {
+      section.about .boxes .box .icon,
+      section.about .boxes .box .info {
         display: inline-block;
         vertical-align: middle; }
       section.about .boxes .box .info {
@@ -1957,9 +1958,15 @@ section.blog .pagination {
   margin: auto;
   margin-top: -20px;
   padding: 0px 0px 0px 0px; }
+  section.blog .pagination .current {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    padding: 8px 20px; }
   section.blog .pagination a {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
     color: black;
-    padding: 8px 16px;
+    padding: 8px 20px;
     text-decoration: none; }
 
 @media only screen and (max-width: 1250px) {
@@ -2095,6 +2102,10 @@ section.article .image {
   padding-right: 80px;
   padding-bottom: 30px; }
 
+@media only screen and (max-width: 1200px) {
+  section.article .share {
+    top: 25px; } }
+
 @media only screen and (max-width: 1000px) {
   section.article .title {
     font-size: 24px; }
@@ -2114,8 +2125,12 @@ section.article .image {
     position: relative;
     width: 100%;
     left: 0px;
-    top: -10px;
+    top: 0px;
     text-align: left; }
+    section.article .share .text {
+      font-size: 22px; }
+    section.article .share .image-share {
+      margin-right: 10px; }
   section.article .popup .holder {
     top: -58px;
     left: 10px; } }
@@ -2317,13 +2332,15 @@ section.more-article .holder {
         margin-bottom: 80px; }
         .red-section.blog .holder .more .title {
           font-size: 35px; }
+        .red-section.blog .holder .more .cont {
+          font-size: 16px; }
     .red-section.blog .inner {
       padding: 25px 15px 35px 15px; }
     .red-section.blog .right-dots {
       display: none; }
     .red-section.blog .down-dots {
-      right: 6px;
-      width: 95%; } }
+      right: 0px;
+      width: 100%; } }
 
 /* ---------------------- Section shipment ---------------------- */
 section.shipment .section-inner {
@@ -2439,9 +2456,10 @@ section.shipment .prices .holder {
     padding: 0px 0px;
     margin-top: 30px;
     margin-bottom: 10px;
-    text-align: center; }
+    text-align: center;
+    font-size: 20px; }
   section.shipment .prices .sub-title {
-    font-size: 24px;
+    font-size: 17px;
     margin-top: 30px; }
   section.shipment .prices .holder {
     display: -webkit-box;
@@ -2454,7 +2472,7 @@ section.shipment .prices .holder {
       width: 100%;
       text-align: center; } }
 
-/* --------------------- /Section about ---------------------- */
+/* --------------------- /Section shipment ---------------------- */
 /* ---------------------- Section team ---------------------- */
 section.team {
   margin-top: 35px;
@@ -2652,7 +2670,7 @@ section.slider-steps {
         -webkit-transition: 0.5s;
         transition: 0.5s; }
         section.slider-steps .slider .arrows .arrow:hover {
-          color: #F3BA51; }
+          color: #f3ba51; }
   @media only screen and (max-width: 1200px) {
     section.slider-steps {
       padding-bottom: 150px; }
@@ -2710,4 +2728,225 @@ section.slider-steps {
       bottom: 95px; } }
 
 /* --------------------- /Section slider-steps ---------------------- */
-/* --------------------- /Section shipment ---------------------- */
+/* ---------------------- Section contact ---------------------- */
+section.contact .wrapper-corners-shadow {
+  position: relative;
+  height: 1100px;
+  background-color: #fefefe;
+  background-image: url(../images/inner/contact/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 20px 75px 0px rgba(181, 181, 181, 0.35);
+  box-shadow: 0px 20px 75px 0px rgba(181, 181, 181, 0.35); }
+
+section.contact .title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #d54b28;
+  text-align: center; }
+
+section.contact .content {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #4f4f4f; }
+  section.contact .content strong {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 18px; }
+  section.contact .content p {
+    margin-top: 20px; }
+
+section.contact .icons {
+  margin-top: 80px; }
+  section.contact .icons .holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    section.contact .icons .holder .icon {
+      width: 25%;
+      text-align: center; }
+      section.contact .icons .holder .icon .text {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        font-size: 28px;
+        color: #4f4f4f; }
+      section.contact .icons .holder .icon .sub-text {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        color: #4f4f4f; }
+
+section.contact .div-dots {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center; }
+
+section.contact .contact-form {
+  margin-top: 100px;
+  padding-bottom: 100px; }
+  section.contact .contact-form .title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #4f4f4f;
+    margin-bottom: 80px; }
+  section.contact .contact-form .wpcf7 form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    position: relative; }
+  section.contact .contact-form .wpcf7 input,
+  section.contact .contact-form .wpcf7 select {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #3c3c3c;
+    border: none;
+    background-color: #f0f0f0;
+    outline: none;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    width: 100%; }
+    section.contact .contact-form .wpcf7 input::-webkit-input-placeholder,
+    section.contact .contact-form .wpcf7 select::-webkit-input-placeholder {
+      /* WebKit browsers */
+      color: #4f4f4f; }
+    section.contact .contact-form .wpcf7 input:-moz-placeholder,
+    section.contact .contact-form .wpcf7 select:-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: #4f4f4f; }
+    section.contact .contact-form .wpcf7 input::-moz-placeholder,
+    section.contact .contact-form .wpcf7 select::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #4f4f4f; }
+    section.contact .contact-form .wpcf7 input:-ms-input-placeholder,
+    section.contact .contact-form .wpcf7 select:-ms-input-placeholder {
+      /* Internet Explorer 10+ */
+      color: #4f4f4f; }
+  section.contact .contact-form .wpcf7 select {
+    background: url(../images/inner/contact/arrow.png) 10% no-repeat #f0f0f0;
+    width: calc(25% - 20px);
+    margin: 10px 10px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none; }
+  section.contact .contact-form .wpcf7 .break {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+  section.contact .contact-form .wpcf7 .wpcf7-form-control-wrap {
+    position: relative;
+    width: calc(25% - 20px);
+    margin: 10px 10px; }
+  section.contact .contact-form .wpcf7 input[type="submit"] {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    width: initial;
+    color: #fff;
+    background-color: #c8432c;
+    padding: 20px 70px;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border: none;
+    margin-top: 45px; }
+  section.contact .contact-form .wpcf7 span[role="alert"] {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #232323;
+    position: absolute;
+    left: 0;
+    bottom: -20px; }
+  section.contact .contact-form .wpcf7 .wpcf7-response-output {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    position: absolute;
+    bottom: -23px;
+    border: none;
+    padding: 0;
+    margin: 0; }
+  section.contact .contact-form .wpcf7 .ajax-loader {
+    display: none; }
+
+@media only screen and (max-width: 1024px) {
+  section.contact .icons {
+    margin-top: 80px; }
+    section.contact .icons .holder .icon {
+      width: 25%;
+      text-align: center; }
+      section.contact .icons .holder .icon .text {
+        font-size: 24px; }
+      section.contact .icons .holder .icon .sub-text {
+        font-size: 20px; } }
+
+@media only screen and (max-width: 1000px) {
+  section.contact .wrapper-corners-shadow {
+    height: inherit;
+    padding-top: 30px; }
+  section.contact .icons {
+    margin-top: 30px; }
+    section.contact .icons .holder {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      section.contact .icons .holder .icon {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px; }
+        section.contact .icons .holder .icon .text {
+          font-size: 22px; }
+        section.contact .icons .holder .icon .sub-text {
+          font-size: 18px; }
+  section.contact .contact-form {
+    margin-top: 0px;
+    padding-bottom: 0px; }
+    section.contact .contact-form .title {
+      font-size: 24px;
+      margin-bottom: 30px; }
+    section.contact .contact-form .wpcf7 .wpcf7-form-control-wrap {
+      position: relative;
+      width: calc(100% - 20px);
+      margin: 10px 10px; }
+    section.contact .contact-form .wpcf7 select {
+      width: calc(100% - 20px); }
+    section.contact .contact-form .wpcf7 input[type="submit"] {
+      margin-bottom: 30px;
+      border: 1px solid #f0f0f0; }
+  section.contact .title {
+    font-size: 24px; }
+  section.contact .content {
+    font-size: 16px; }
+  section.contact .div-dots {
+    margin-top: 0px;
+    margin-bottom: 30px; } }
+
+footer.contact {
+  z-index: 1;
+  top: -90px;
+  padding-top: 200px; }
+  @media only screen and (max-width: 1000px) {
+    footer.contact {
+      padding-top: 150px; } }
+
+/* --------------------- /Section contact ---------------------- */
