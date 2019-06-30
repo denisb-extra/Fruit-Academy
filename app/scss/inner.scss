@@ -1253,6 +1253,7 @@ section.slider-steps {
 /* ---------------------- Section products ---------------------- */
 
 section.products {
+    margin-bottom: -500px;
     .wrapper-corners-shadow {
         padding-right: 8%;
         padding-left: 8%;
@@ -1314,7 +1315,105 @@ section.products {
             }
         }
     }
+
+    @media only screen and (max-width : $mw) {
+        .wrapper-corners-shadow {
+            padding-right: 0;
+            padding-left: 0;
+
+            border-radius: 10px;
+
+        }
+        .text-top {
+            .title {
+                font-size: 45px;
+            }
+            .content {
+                font-size: 16px;
+            }
+        } 
+
+        .boxes {
+            margin: 0;
+
+            .box {
+                width: 33.33%;
+                margin-top: 45px;
+
+                &.banner {
+                    width: 66.66%;
+                }
+            }
+        }
+
+        .text-bottom {
+            font-size: 16px;
+            padding: 0 20px;
+            column-gap: 45px;
+        }
+
+    }
+
+    @media only screen and (max-width : 650px) {
+
+        .text-top {
+            .title {
+                font-size: 35px;
+            }
+            .content {
+                font-size: 16px;
+            }
+        } 
+
+        .boxes {
+            margin: 0;
+
+            .box {
+                width: 50%;
+                margin-top: 15px;
+                height: 330px;
+                .inner {
+                    .title {
+                        font-size: 28px;
+                        line-height: 28px;
+                    }
+                    .part-add {
+                        .buttons {
+                            a {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                &.banner {
+                    width: 100%;
+                    .inner {
+                        padding-bottom: 43%;
+                    }
+                }
+            }
+        }
+
+        .text-bottom {
+            column-count: 1;
+            padding-bottom: 20px;
+        }
+    }
+
+    @media only screen and (max-width : 500px) {
+         .boxes {
+            .box {
+                height: 265px;
+            }
+        }
+    }
 }
 
 
 /* --------------------- /Section products ---------------------- */
+
+/* ---------------------- flow-over ---------------------- */
+.red-section.flow-over {
+    padding-top: 550px;
+}
+/* --------------------- /flow-over ---------------------- */
