@@ -2838,3 +2838,401 @@ section.products {
   padding-top: 550px; }
 
 /* --------------------- /flow-over ---------------------- */
+/* ---------------------- Section product ---------------------- */
+section.product {
+  padding: 50px 0;
+  padding-bottom: 90px; }
+  section.product .woocommerce-notices-wrapper {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #232323; }
+  section.product .parts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    section.product .parts .part {
+      width: 50%; }
+    section.product .parts .part-info {
+      padding: 35px 0;
+      padding-left: 5%;
+      font-size: 0; }
+      section.product .parts .part-info .title {
+        font-family: 'Amatic SC', Arial;
+        font-weight: 700;
+        font-size: 60px;
+        color: #d54b28; }
+      section.product .parts .part-info .content {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #4f4f4f;
+        margin-top: 25px; }
+        section.product .parts .part-info .content p {
+          margin-top: 15px; }
+      section.product .parts .part-info .variations {
+        display: block;
+        margin-top: 30px; }
+        section.product .parts .part-info .variations .fieldset {
+          border: none;
+          background: #f4f4f4;
+          border-radius: 0 0 5px 5px;
+          padding: 0;
+          margin: 0;
+          padding: 25px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+          section.product .parts .part-info .variations .fieldset label {
+            display: block;
+            width: auto;
+            text-align: center;
+            margin: 0 6%;
+            color: #525252;
+            cursor: pointer; }
+            section.product .parts .part-info .variations .fieldset label .name, section.product .parts .part-info .variations .fieldset label .price {
+              font-family: 'Rubik', sans-serif;
+              font-weight: 700;
+              font-size: 18px;
+              margin-top: 10px; }
+            section.product .parts .part-info .variations .fieldset label .price {
+              -webkit-transition: 0.5s;
+              transition: 0.5s; }
+            section.product .parts .part-info .variations .fieldset label .size {
+              font-family: 'Rubik', sans-serif;
+              font-weight: 400;
+              font-size: 18px;
+              margin-top: 5px; }
+            section.product .parts .part-info .variations .fieldset label input {
+              display: none; }
+            section.product .parts .part-info .variations .fieldset label input:checked ~ .checkmark:after {
+              -webkit-transform: scale(1);
+                      transform: scale(1);
+              opacity: 1; }
+            section.product .parts .part-info .variations .fieldset label input:checked ~ .price {
+              color: #f89c1e; }
+            section.product .parts .part-info .variations .fieldset label .checkmark {
+              display: inline-block;
+              vertical-align: middle;
+              height: 23px;
+              width: 23px;
+              background: #fff;
+              border: 1px solid #fff;
+              border-radius: 100%;
+              position: relative;
+              margin-top: 13px; }
+              section.product .parts .part-info .variations .fieldset label .checkmark:after {
+                position: absolute;
+                border-radius: 100%;
+                content: "";
+                height: 13px;
+                width: 13px;
+                background: #f06326;
+                top: 4px;
+                right: 4px;
+                -webkit-transform: scale(0.2);
+                        transform: scale(0.2);
+                opacity: 0;
+                -webkit-transition: 0.5s;
+                transition: 0.5s; }
+        section.product .parts .part-info .variations tbody {
+          display: block; }
+        section.product .parts .part-info .variations tr, section.product .parts .part-info .variations td {
+          display: block; }
+        section.product .parts .part-info .variations td.label {
+          background: #f1ae39;
+          font-family: 'Amatic SC', Arial;
+          font-weight: 700;
+          font-size: 35px;
+          line-height: 35px;
+          padding: 15px;
+          padding-right: 75px;
+          color: #fff;
+          border-radius: 5px 5px 0 0;
+          position: relative; }
+          section.product .parts .part-info .variations td.label:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            right: 20px;
+            height: 33px;
+            width: 33px;
+            border-radius: 100%;
+            background-color: #ffffff4D;
+            background-image: url("../images/icons/ch-up.png");
+            background-position: center center;
+            background-repeat: no-repeat; }
+      section.product .parts .part-info .custom_options {
+        margin-top: 25px; }
+        section.product .parts .part-info .custom_options .wc-pao-addon-name {
+          background: #d54b28;
+          font-family: 'Amatic SC', Arial;
+          font-weight: 700;
+          font-size: 35px;
+          line-height: 35px;
+          padding: 15px;
+          padding-right: 75px;
+          color: #fff;
+          position: relative;
+          margin: 0;
+          outline: none;
+          cursor: pointer; }
+          section.product .parts .part-info .custom_options .wc-pao-addon-name:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            -webkit-transform: rotate(0deg) translateY(-50%);
+                    transform: rotate(0deg) translateY(-50%);
+            right: 20px;
+            height: 33px;
+            width: 33px;
+            border-radius: 100%;
+            background-color: #ffffff4D;
+            background-image: url("../images/icons/ch-up.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            -webkit-transform-origin: 50% 0%;
+                    transform-origin: 50% 0%; }
+          section.product .parts .part-info .custom_options .wc-pao-addon-name.ui-state-active:before {
+            -webkit-transform: rotate(180deg) translateY(-50%);
+                    transform: rotate(180deg) translateY(-50%); }
+          section.product .parts .part-info .custom_options .wc-pao-addon-name:first-child {
+            border-radius: 5px 5px 0 0; }
+        section.product .parts .part-info .custom_options .wc-pao-addon {
+          border: none;
+          background: #f4f4f4;
+          padding: 0;
+          margin: 0;
+          padding: 25px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start; }
+          section.product .parts .part-info .custom_options .wc-pao-addon .form-row {
+            display: block;
+            width: auto;
+            text-align: center;
+            margin: 4% 2%;
+            width: 29%;
+            color: #525252;
+            cursor: pointer; }
+            section.product .parts .part-info .custom_options .wc-pao-addon .form-row label {
+              position: relative;
+              display: inline-block;
+              cursor: pointer; }
+              section.product .parts .part-info .custom_options .wc-pao-addon .form-row label .option-title {
+                font-family: 'Rubik', sans-serif;
+                font-weight: 900;
+                font-size: 24px;
+                color: #525252;
+                position: relative;
+                z-index: 2; }
+              section.product .parts .part-info .custom_options .wc-pao-addon .form-row label .woocommerce-Price-amount {
+                display: block;
+                font-family: 'Rubik', sans-serif;
+                font-weight: 500;
+                font-size: 18px;
+                position: relative;
+                z-index: 2; }
+              section.product .parts .part-info .custom_options .wc-pao-addon .form-row label input {
+                display: none; }
+              section.product .parts .part-info .custom_options .wc-pao-addon .form-row label input:checked ~ .checkmark {
+                -webkit-filter: grayscale(0%);
+                        filter: grayscale(0%);
+                opacity: 1; }
+              section.product .parts .part-info .custom_options .wc-pao-addon .form-row label .checkmark {
+                display: inline-block;
+                width: 87px;
+                height: 60px;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                background: url("../images/icons/cm-cb.png") no-repeat;
+                position: absolute;
+                z-index: 1;
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+                -webkit-filter: grayscale(100%);
+                        filter: grayscale(100%);
+                opacity: 0.5; }
+      section.product .parts .part-info #product-addons-total .wc-pao-col1, section.product .parts .part-info #product-addons-total .wc-pao-col2 {
+        display: none; }
+      section.product .parts .part-info #product-addons-total .price {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+        color: #4f4f4f; }
+        section.product .parts .part-info #product-addons-total .price .amount {
+          font-family: 'Rubik', sans-serif;
+          font-weight: 700;
+          font-size: 25px;
+          color: #90b921; }
+      section.product .parts .part-info .single_variation {
+        display: none; }
+      section.product .parts .part-info .quantity {
+        display: none; }
+      section.product .parts .part-info .single_variation_wrap, section.product .parts .part-info #product-addons-total {
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 55px; }
+      section.product .parts .part-info .single_variation_wrap {
+        text-align: left; }
+      section.product .parts .part-info .single_add_to_cart_button {
+        display: block;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #fff;
+        background: #639e0d;
+        border: none;
+        padding: 25px 45px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-left: 0;
+        margin-right: auto; }
+    section.product .parts .part-images {
+      padding-right: 5%;
+      margin-top: 55px; }
+      section.product .parts .part-images .main {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        position: relative;
+        display: block;
+        text-align: center; }
+        section.product .parts .part-images .main img {
+          max-width: 100%;
+          max-height: 500px; }
+      section.product .parts .part-images .thumbs {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: -2%;
+        margin-top: 20px;
+        font-size: 0; }
+        section.product .parts .part-images .thumbs .thumb {
+          font-size: 0;
+          cursor: pointer;
+          border: 2px solid #fff;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+          margin: 2%; }
+          section.product .parts .part-images .thumbs .thumb.selected {
+            border: 2px solid #c03c42; }
+          section.product .parts .part-images .thumbs .thumb img {
+            width: 100%; }
+      section.product .parts .part-images .related-products {
+        margin-top: 50px; }
+        section.product .parts .part-images .related-products .title {
+          font-family: 'Amatic SC', Arial;
+          font-weight: 700;
+          font-size: 35px;
+          color: #262626; }
+        section.product .parts .part-images .related-products .products {
+          margin-top: 20px; }
+          section.product .parts .part-images .related-products .products .owl-stage {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: stretch;
+                -ms-flex-align: stretch;
+                    align-items: stretch;
+            padding-bottom: 20px; }
+          section.product .parts .part-images .related-products .products .box {
+            text-align: center;
+            background: #eeeeee;
+            padding: 15px;
+            border-radius: 5px;
+            height: 100%;
+            padding-top: 25px;
+            padding-bottom: 35px;
+            position: relative; }
+            section.product .parts .part-images .related-products .products .box .name {
+              font-family: 'Rubik', sans-serif;
+              font-weight: 500;
+              font-size: 18px;
+              color: #bf1e1d; }
+            section.product .parts .part-images .related-products .products .box .image {
+              display: inline-block;
+              width: 100%;
+              background: #fff;
+              border-radius: 5px;
+              overflow: hidden;
+              margin-top: 20px;
+              padding: 20px;
+              height: 150px;
+              position: relative; }
+              section.product .parts .part-images .related-products .products .box .image img {
+                max-width: 80%;
+                max-height: 80%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%); }
+            section.product .parts .part-images .related-products .products .box .price {
+              font-family: 'Rubik', sans-serif;
+              font-weight: 500;
+              font-size: 16px;
+              color: #6d6d6d;
+              margin-top: 20px; }
+              section.product .parts .part-images .related-products .products .box .price ins {
+                text-decoration: none; }
+              section.product .parts .part-images .related-products .products .box .price del {
+                font-family: 'Rubik', sans-serif;
+                font-weight: 400;
+                font-size: 14px; }
+            section.product .parts .part-images .related-products .products .box .add_to_cart_button {
+              height: 34px;
+              width: 34px;
+              display: inline-block;
+              background: #f4bc59;
+              color: #5c5d5f;
+              border: 3px solid #5c5d5f;
+              border-radius: 100%;
+              font-family: 'Rubik', sans-serif;
+              font-weight: 700;
+              font-size: 25px;
+              line-height: 27px;
+              text-align: center;
+              position: absolute;
+              left: 50%;
+              -webkit-transform: translateX(-50%);
+                      transform: translateX(-50%);
+              bottom: -17px; }
+  @media only screen and (max-width: 800px) {
+    section.product {
+      padding-bottom: 55px; }
+      section.product .parts {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        section.product .parts .part {
+          width: 100%;
+          padding: 0; }
+        section.product .parts .part-info {
+          margin-top: 25px; }
+          section.product .parts .part-info form {
+            text-align: center; }
+            section.product .parts .part-info form .single_add_to_cart_button {
+              margin-left: auto;
+              margin-right: auto; }
+          section.product .parts .part-info .price {
+            font-size: 20px; } }
+
+/* --------------------- /Section product ---------------------- */

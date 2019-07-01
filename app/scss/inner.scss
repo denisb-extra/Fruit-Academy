@@ -1417,3 +1417,471 @@ section.products {
     padding-top: 550px;
 }
 /* --------------------- /flow-over ---------------------- */
+
+
+/* ---------------------- Section product ---------------------- */
+section.product {
+    padding: 50px 0;
+    padding-bottom: 90px;
+    .woocommerce-notices-wrapper {
+        @include f-r;
+        font-size: 17px;
+        color: #232323;
+    }
+    .parts {
+        display: flex;
+        align-items: flex-start;
+        .part {
+            width: 50%;
+        }
+        
+        .part-info {
+            padding: 35px 0;
+            padding-left: 5%;
+            font-size: 0;
+            .title {
+                @include am-b;
+                font-size: 60px;
+                color: #d54b28;
+            }
+        
+            .content {
+                @include f-r;
+                font-size: 18px;
+                color: #4f4f4f;
+                margin-top: 25px;
+                p {
+                    margin-top: 15px;
+                }
+            }
+
+            .variations {
+                display: block;
+                margin-top: 30px;
+                .fieldset {
+                    border: none;
+                    background: #f4f4f4;
+                    border-radius: 0 0 5px 5px;
+                    padding: 0;
+                    margin: 0;
+                    padding: 25px;
+
+                    display: flex;
+                    justify-content: center;
+                   
+
+                    label {
+                        display: block;
+                        width: auto;
+                        text-align: center;
+                        margin: 0 6%;
+                        color: #525252;
+                        cursor: pointer;
+                        
+                        .name, .price {
+                            @include f-b;
+                            font-size: 18px;
+                            margin-top: 10px;
+                        }
+                        .price {
+                            transition: 0.5s;
+                        }
+                        .size {
+                            @include f-r;
+                            font-size: 18px;
+                            margin-top: 5px;
+                        }
+
+                        input {
+                            display: none;
+                        }
+
+                        input:checked ~ .checkmark:after {
+                            transform: scale(1);
+                            opacity: 1;
+                        }
+
+                        input:checked ~ .price {
+                            color: #f89c1e;
+                        }
+
+                        .checkmark {
+                            display: inline-block;
+                            vertical-align: middle;
+                            height: 23px;
+                            width: 23px;
+                            background: #fff;
+                            border: 1px solid #fff;
+                            border-radius: 100%;
+                            position: relative;
+                            margin-top: 13px;
+
+                            &:after {
+                                position: absolute;
+                                border-radius: 100%;
+                                content: "";
+                                height: 13px;
+                                width: 13px;
+                                background: #f06326;
+                                top: 4px;
+                                right: 4px;
+                                transform: scale(0.2);
+                                opacity: 0;
+                                transition: 0.5s;
+                            }
+                        }
+
+                    }
+
+                }
+                
+                tbody {
+                    display: block;
+                }
+                tr, td {
+                    display: block;
+                }
+
+                td.label {
+                    background: #f1ae39;
+                    @include am-b;
+                    font-size: 35px;
+                    line-height: 35px;
+                    padding: 15px;
+                    padding-right: 75px;
+                    color: #fff;
+                    border-radius: 5px 5px 0 0;
+                    position: relative;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 20px;
+                        height: 33px;
+                        width: 33px;
+                        border-radius: 100%;
+                        background-color: #ffffff4D;
+                        background-image: url("../images/icons/ch-up.png");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+
+
+            .custom_options {
+                margin-top: 25px;
+                .wc-pao-addon-name {
+                    background: #d54b28;
+                    @include am-b;
+                    font-size: 35px;
+                    line-height: 35px;
+                    padding: 15px;
+                    padding-right: 75px;
+                    color: #fff;
+                   
+                    position: relative;
+                    margin: 0;
+
+                    outline: none;
+                    cursor: pointer;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        transform: rotate(0deg) translateY(-50%);
+                        right: 20px;
+                        height: 33px;
+                        width: 33px;
+                        border-radius: 100%;
+                        background-color: #ffffff4D;
+                        background-image: url("../images/icons/ch-up.png");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        transition: 0.5s;
+                        transform-origin: 50% 0%;
+                    }
+
+                    &.ui-state-active:before {
+                        transform: rotate(180deg) translateY(-50%);
+                    }
+
+                     &:first-child {
+                        border-radius: 5px 5px 0 0;
+                    }
+                }
+
+                .wc-pao-addon {
+                    border: none;
+                    background: #f4f4f4;
+                    padding: 0;
+                    margin: 0;
+                    padding: 25px;
+                    
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    //margin: -2% -2%;
+                    .form-row {
+                        display: block;
+                        width: auto;
+                        text-align: center;
+                        margin: 4% 2%;
+                        width: 29%;
+                        color: #525252;
+                        cursor: pointer;
+
+
+                        label {
+                            position: relative;
+                            display: inline-block;
+                            cursor: pointer;
+                            .option-title {
+                                @include f-bl;
+                                font-size: 24px;
+                                color: #525252;
+                                position: relative;
+                                z-index: 2;
+                            }
+                            .woocommerce-Price-amount {
+                                display: block;
+                                @include f-m;
+                                font-size: 18px;
+                                position: relative;
+                                z-index: 2;
+                            }
+                            input {
+                                display: none;
+                            }
+
+                            input:checked ~ .checkmark {
+                                filter: grayscale(0%);
+                                opacity: 1;
+                            }
+                            .checkmark {
+                                display: inline-block;
+                                width: 87px;
+                                height: 60px;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                                background: url("../images/icons/cm-cb.png") no-repeat;
+                                position: absolute;
+                                z-index: 1;
+
+                                transition: 0.5s;
+                                filter: grayscale(100%);
+                                opacity: 0.5;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            #product-addons-total {
+                .wc-pao-col1, .wc-pao-col2 {
+                    display: none;
+                }
+
+                .price {
+                    @include f-m;
+                    font-size: 25px;
+                    color: #4f4f4f;
+
+                    .amount {
+                        @include f-b;
+                        font-size: 25px;
+                        color: #90b921;
+                    }
+                }
+            }
+
+            .single_variation {
+                display: none;
+            }
+
+            .quantity {
+                display: none;
+            }
+
+            .single_variation_wrap, #product-addons-total {
+                width: 50%;
+                display: inline-block;
+                vertical-align: middle;
+                margin-top: 55px;
+            }
+            
+            .single_variation_wrap {
+                
+                text-align: left;
+            }
+
+            .single_add_to_cart_button {
+                display: block;
+                @include f-m;
+                font-size: 18px;
+                color: #fff;
+                background: #639e0d;
+                border: none;
+                padding: 25px 45px;
+                cursor: pointer;
+                border-radius: 5px;
+                margin-left: 0;
+                margin-right: auto;
+            }
+        }
+        .part-images {
+            padding-right: 5%;
+            margin-top: 55px;
+            .main {
+                flex-grow: 1;
+                position: relative;
+                display: block;
+                text-align: center;
+                img {
+                    max-width: 100%;
+                    max-height: 500px;
+                }
+            }
+            .thumbs {
+                display: flex;
+                margin: -2%;
+                margin-top: 20px;
+                font-size: 0;
+                .thumb {
+                    font-size: 0;
+                    
+                    
+                    cursor: pointer;
+                    border: 2px solid #fff;
+                    transition: 0.5s;
+                    margin: 2%;
+                    &.selected {
+                        border: 2px solid #c03c42;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .related-products {
+                margin-top: 50px;
+                .title {
+                    @include am-b;
+                    font-size: 35px;
+                    color: #262626;
+                }
+
+                .products {
+                    margin-top: 20px;
+                    .owl-stage {
+                        display: flex;
+                        align-items: stretch;
+                        padding-bottom: 20px;
+                    }
+                    .box {
+                        text-align: center;
+                        background: #eeeeee;
+                        padding: 15px;
+                        border-radius: 5px;
+                        height: 100%;
+                        padding-top: 25px;
+                        padding-bottom: 35px;
+                        position: relative;
+
+                        .name {
+                            @include f-m;
+                            font-size: 18px;
+                            color: #bf1e1d;
+                        }
+
+                        .image {
+                            display: inline-block;
+                            width: 100%;
+                            background: #fff;
+                            border-radius: 5px;
+                            overflow: hidden;
+                            margin-top: 20px;
+                            padding: 20px;
+                            height: 150px;
+                            position: relative;
+                            img {
+                                max-width: 80%;
+                                max-height: 80%;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                            }
+                        }
+
+                        .price {
+                            @include f-m;
+                            font-size: 16px;
+                            color: #6d6d6d;
+                            margin-top: 20px;
+                            ins {
+                                text-decoration: none;
+                            }
+                            del {
+                                @include f-r;
+                                font-size: 14px;
+                            }
+                        }
+
+                        .add_to_cart_button {
+                            height: 34px;
+                            width: 34px;
+                            display: inline-block;
+                            background: #f4bc59;
+                            color: #5c5d5f;
+                            border: 3px solid #5c5d5f;
+                            border-radius: 100%;
+                            @include f-b;
+                            font-size: 25px;
+                            line-height: 27px;
+                            text-align: center;
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            bottom: -17px;
+                            
+                        }
+
+                    }
+                }
+            }
+            
+        }
+    }
+
+    @media only screen and (max-width : 800px) {
+        padding-bottom: 55px;
+        .parts {
+            flex-wrap: wrap;
+            .part {
+                width: 100%;
+                padding: 0;
+            }
+
+            .part-info {
+                margin-top: 25px;
+                form {
+                    text-align: center;
+                    .single_add_to_cart_button {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                .price {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+/* --------------------- /Section product ---------------------- */ 
+
