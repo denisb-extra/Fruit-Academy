@@ -126,10 +126,6 @@ section.about {
         .box {
             margin: 0 25px;
             white-space: nowrap;
-<<<<<<< HEAD
-
-=======
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
             .icon,
             .info {
                 display: inline-block;
@@ -151,10 +147,6 @@ section.about {
                 }
             }
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
         @media only screen and (max-width: $tw) {
             margin-top: 35px;
             padding: 15px;
@@ -181,10 +173,6 @@ section.about {
                 }
             }
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
         @media only screen and (max-width: $mw) {
             flex-wrap: wrap;
             justify-content: center;
@@ -203,10 +191,6 @@ section.about {
                 }
             }
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
         @media only screen and (max-width: 500px) {
             .box {
                 width: 100%;
@@ -220,10 +204,6 @@ section.about {
             }
         }
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
     @media only screen and (max-width: $mw) {
         .title {
             font-size: 24px;
@@ -237,12 +217,9 @@ section.about {
         }
     }
 }
-<<<<<<< HEAD
-=======
 
 
 /* --------------------- /Section about ---------------------- */
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
 
 /* --------------------- /Section about ---------------------- */
 
@@ -295,8 +272,12 @@ section.blog {
                 background: rgba(200, 44, 44, 0.8);
 
                 .title {
-                    &:after {
-                        content: "";
+                    @media only screen and (min-width: 1250px) {
+                        &:after {
+                        
+                            content: "";
+
+                        }
                     }
                 }
             }
@@ -423,6 +404,7 @@ section.blog {
         padding: 0px 0px 0px 0px;
         .current {
             @include f-b;
+            color:#d54b28;
             padding: 8px 20px;
         }
         a {
@@ -442,10 +424,6 @@ section.blog {
             margin-top: 0px;
             padding: 30px 0px 0px 0px;
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
         .boxes {
             flex-wrap: wrap;
             justify-content: space-around;
@@ -463,9 +441,10 @@ section.blog {
 
                 .caption {
                     padding: 0 20px;
-
+                    height: 400px;
                     .title {
-                        font-size: 20px;
+                        font-size: 18px;
+                        height: 80px;
                     }
                 }
 
@@ -498,6 +477,16 @@ section.blog {
         }
     }
 
+    @media only screen and (max-width: 1000px) {
+               
+        .boxes {
+            .box {
+               
+                width: 46%;
+            }
+        }
+    }
+
     @media only screen and (max-width: 600px) {
         .boxes {
             .box {
@@ -505,10 +494,6 @@ section.blog {
                 height: 400px;
             }
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
         .pagination a {
             padding: 8px 10px;
         }
@@ -617,7 +602,9 @@ section.article {
         @include f-r;
         font-size: 18px;
         color: #4f4f4f;
-
+        a {
+            color: #d54b28;
+        }
         strong {
             @include f-m;
             font-size: 18px;
@@ -632,6 +619,7 @@ section.article {
         float: left;
         padding-right: 80px;
         padding-bottom: 30px;
+        padding-top: 25px;
     }
     @media only screen and (max-width: $tw) {
         .share {          
@@ -666,7 +654,7 @@ section.article {
             position: relative;
             width: 100%;
             left: 0px;
-            top: 0px;
+            top: -5px;
             text-align: left;
 
             .text {
@@ -695,17 +683,9 @@ section.more-article {
     .section-inner {
         margin-bottom: 100px;
     }
-<<<<<<< HEAD
-
     .holder {
         text-align: center;
         margin-top: 70px;
-
-=======
-    .holder {
-        text-align: center;
-        margin-top: 70px;
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
         .next-article,
         .back-article,
         .line {
@@ -713,6 +693,10 @@ section.more-article {
             @include f-b;
             font-size: 30px;
             color: #4f4f4f;
+
+            a {
+                color: inherit;
+            }
         }
 
         .next-article {
@@ -735,10 +719,6 @@ section.more-article {
         .back-article {
             text-align: left;
             width: 400px;
-<<<<<<< HEAD
-
-=======
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
             .arrow {
                 border: solid #b21f24;
                 border-width: 0 5px 5px 0;
@@ -766,10 +746,6 @@ section.more-article {
         .section-inner {
             margin-bottom: 30px;
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
         .holder {
             text-align: center;
             margin-top: 30px;
@@ -804,10 +780,6 @@ section.more-article {
                     top: 0px;
                 }
             }
-<<<<<<< HEAD
-
-=======
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
             .next-article,
             .back-article,
             .line {
@@ -900,7 +872,9 @@ section.more-article {
             margin: 45px 0px 0px 0px;
             width: 100%;
             text-align: left;
-
+            a {
+                color: inherit;
+            }
             .arrow {
                 border: solid #b21f24;
                 border-width: 0 3px 3px 0;
@@ -986,37 +960,19 @@ section.shipment {
     .section-inner {
         margin-bottom: 100px;
     }
-<<<<<<< HEAD
-
     .wrapper-corners-shadow {
         position: relative;
     }
-
-=======
-    .wrapper-corners-shadow {
-        position: relative;
-    }
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
     .title {
         @include f-b;
         font-size: 30px;
         color: #d54b28;
         text-align: center;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
     .content {
         @include f-r;
         font-size: 18px;
         color: #4f4f4f;
-<<<<<<< HEAD
-
-        strong {
-            @include f-m;
-            font-size: 18px;
-=======
         strong {
             @include f-m;
             font-size: 18px;
@@ -1035,6 +991,10 @@ section.shipment {
                 font-size: 18px;
                 color: #4f4f4f;
                 padding: 20px 35px;
+
+                a {
+                    color:inherit;
+                }
                 &:hover {
                     @include f-m;
                     background-color: #f2f2f2;
@@ -1064,7 +1024,6 @@ section.shipment {
             padding: 0px 70px;
             margin-top: 100px;
             margin-bottom: 30px;
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
         }
 
         p {
@@ -1126,18 +1085,10 @@ section.shipment {
             text-align: center;
             margin-top: 70px;
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
         .holder {
             display: flex;
             flex-wrap: wrap;
             padding: 0px 70px;
-<<<<<<< HEAD
-
-=======
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
             .col {
                 @include f-r;
                 font-size: 16px;
@@ -1148,25 +1099,13 @@ section.shipment {
             }
         }
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
     @media only screen and (max-width: $mw) {
         .section-inner {
             margin-bottom: 40px;
         }
-<<<<<<< HEAD
-
         .title {
             font-size: 24px;
         }
-
-=======
-        .title {
-            font-size: 24px;
-        }
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
         .content {
             font-size: 16px;
         }
@@ -1174,23 +1113,13 @@ section.shipment {
             .holder {
                 display: flex;
                 flex-direction: column;
-<<<<<<< HEAD
-
                 margin-top: 30px;
-
-=======
-                margin-top: 30px;
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
                 .item {
                     padding: 20px 35px;
                     text-align: center;
                 }
             }
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
         .prices {
             .title {
                 padding: 0px 0px;
@@ -1209,10 +1138,6 @@ section.shipment {
                 display: flex;
                 flex-wrap: wrap;
                 padding: 0px 0px;
-<<<<<<< HEAD
-
-=======
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
                 .col {
                     width: 100%;
                     text-align: center;
@@ -1704,9 +1629,9 @@ section.contact {
 
             select {
                 background: url(../images/inner/contact/arrow.png) 10% no-repeat #f0f0f0;
-                width: calc(25% - 20px);
+                width: 100%;
 
-                margin: 10px 10px;
+               
                 appearance: none;
             }
 
@@ -1799,7 +1724,7 @@ section.contact {
                     margin-bottom: 30px;
 
                     .text {
-                        font-size: 22px;
+                        font-size: 20px;
                     }
 
                     .sub-text {
@@ -1826,12 +1751,17 @@ section.contact {
                 }
 
                 select {
-                    width: calc(100% - 20px);
+                    width: 100%;
                 }
 
                 input[type="submit"] {
                     margin-bottom: 30px;
                     border: 1px solid #f0f0f0;
+                }
+                .wpcf7-response-output {
+                   
+                    bottom: 0px;
+                   
                 }
             }
         }
@@ -1850,20 +1780,22 @@ section.contact {
         }
     }
 }
-
-footer.contact {
-    z-index: 1;
-    top: -90px;
-    padding-top: 200px;
-
-    @media only screen and (max-width: $mw) {
-        padding-top: 150px;
+.contact-footer {
+  
+    footer {
+      z-index: 1;
+      top: -90px;
+      padding-top: 200px; 
     }
-}
+  
+    @media only screen and (max-width: 1000px) {
+      footer {
+        padding-top: 150px; } 
+    }
+  
+  }
 
-<<<<<<< HEAD
-/* --------------------- /Section contact ---------------------- */
-=======
+
 /* ---------------------- Section products ---------------------- */
 
 section.products {
@@ -2031,4 +1963,3 @@ section.products {
     padding-top: 550px;
 }
 /* --------------------- /flow-over ---------------------- */
->>>>>>> 321b747205d0476da05c3fd4ea113b3ac2696643
