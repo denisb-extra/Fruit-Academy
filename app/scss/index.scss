@@ -4,6 +4,7 @@
 	display: inline-block;
 	text-align: center;
 	height: 370px;
+	width: 100%;
 	.inner {
 		background: #fff;
 		border-radius: 10px;
@@ -11,6 +12,7 @@
 		position: relative;
 		overflow: hidden;
 		height: 100%;
+		width: 100%;
 	}
 	.title {
 		@include am-b;
@@ -25,7 +27,9 @@
 		transform-origin: top center;
 		text-align: center;
 		img {
+			width: auto;
 			max-width: 100%;
+			max-height: 180px;
 			margin: auto;
 		}
 	}
@@ -1267,6 +1271,7 @@ section.cats-and-feedback {
 	background-image: linear-gradient(to bottom, #c82c2c, #c83e2c);
 	position: relative;
 	padding-top: 140px;
+	padding-bottom: 250px;
 	.half-circle {
 		position: absolute;
 		top: -1px;
@@ -1299,6 +1304,7 @@ section.cats-and-feedback {
 
 	@media only screen and (max-width : $tw) {
 		padding-top: 90px;
+
 		.logo-part{
 			top: -10px;
 			img {
@@ -1317,7 +1323,9 @@ section.cats-and-feedback {
 			}
 		}
 	}
-
+	@media only screen and (max-width : $mw) {
+		padding-bottom: 55px;
+	}
 	@media only screen and (max-width : 700px) {
 		padding-top: 75px;
 		.logo-part{
@@ -1455,7 +1463,7 @@ section.product-slider {
 section.home-bottom {
 	margin-top: 50px;
 	padding-top: 50px;
-	padding-bottom: 250px;
+	
 	position: relative;
 	overflow: visible;
 	z-index: 2;
@@ -1684,7 +1692,6 @@ section.home-bottom {
 	}
 
 	@media only screen and (max-width : $mw) {
-		padding-bottom: 35px;
 		.parts {
 			flex-wrap: wrap;
 			.part {
@@ -1732,7 +1739,7 @@ section.home-bottom {
 	}
 
 	@media only screen and (max-width : 500px) {
-		padding-bottom: 45px;
+	
 
 		.decor-right {
 			top: -140px;

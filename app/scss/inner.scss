@@ -1729,7 +1729,6 @@ section.product {
             width: 50%;
         }
         .part-info {
-            padding: 35px 0;
             padding-left: 5%;
             font-size: 0;
             .title {
@@ -1765,8 +1764,7 @@ section.product {
                         margin: 0 6%;
                         color: #525252;
                         cursor: pointer;
-                        .name,
-                        .price {
+                        .name, .price {
                             @include f-b;
                             font-size: 18px;
                             margin-top: 10px;
@@ -1851,6 +1849,7 @@ section.product {
             .custom_options {
                 margin-top: 25px;
                 .wc-pao-addon-name {
+                    display: block;
                     background: #d54b28;
                     @include am-b;
                     font-size: 35px;
@@ -1903,8 +1902,9 @@ section.product {
                         width: 29%;
                         color: #525252;
                         cursor: pointer;
+                        position: relative;
                         label {
-                            position: relative;
+                            
                             display: inline-block;
                             cursor: pointer;
                             .option-title {
@@ -1936,6 +1936,7 @@ section.product {
                                 left: 50%;
                                 transform: translate(-50%, -50%);
                                 background: url("../images/icons/cm-cb.png") no-repeat;
+                                background-size: 100%;
                                 position: absolute;
                                 z-index: 1;
                                 transition: 0.5s;
@@ -1955,6 +1956,9 @@ section.product {
                     @include f-m;
                     font-size: 25px;
                     color: #4f4f4f;
+
+                    margin-right: 0;
+                    margin-left: auto;
                     .amount {
                         @include f-b;
                         font-size: 25px;
@@ -1963,17 +1967,25 @@ section.product {
                 }
             }
             .single_variation {
-                display: none;
+                display: none !important;
             }
             .quantity {
-                display: none;
+                display: none !important;
             }
-            .single_variation_wrap,
-            #product-addons-total {
+            .single_variation_wrap, #product-addons-total {
                 width: 50%;
                 display: inline-block;
                 vertical-align: middle;
                 margin-top: 55px;
+
+                .wc-pao-subtotal-line, .product-addon-totals {
+                    border: none;
+                    margin: 0;
+                    padding: 0;
+                    ul li {
+                        padding: 0;
+                    }
+                }
             }
             .single_variation_wrap {
                 text-align: left;
@@ -1992,9 +2004,7 @@ section.product {
                 margin-right: auto;
             }
         }
-        .part-images {
-            padding-right: 5%;
-            margin-top: 55px;
+        .gallery {
             .main {
                 flex-grow: 1;
                 position: relative;
@@ -2024,6 +2034,11 @@ section.product {
                     }
                 }
             }
+        }
+        .part-images {
+            padding-right: 5%;
+            margin-top: 55px;
+            
             .related-products {
                 margin-top: 50px;
                 .title {
@@ -2106,7 +2121,94 @@ section.product {
             }
         }
     }
-    @media only screen and (max-width: 800px) {
+
+    @media only screen and (max-width: $tw) {
+         padding: 25px 0;
+
+         .parts {
+            .part-info {
+                padding-left: 3%;
+
+                .title {
+                    font-size: 45px;
+                }
+
+                .content {
+                    font-size: 16px;
+                     p {
+                        margin-top: 10px;
+                    }
+                }
+
+                .variations {
+                    .fieldset {
+                        padding: 15px;
+
+                         label {
+                            .name, .price, .size {
+                                font-size: 16px;
+                            }
+                        }
+
+                    }
+
+                     td.label {
+                        font-size: 30px;
+                        line-height: 30px;
+                        padding: 10px;
+                        padding-right: 45px;
+    
+                        &:before {
+                            right: 10px;
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+                }
+
+                .custom_options {
+                     .wc-pao-addon-name {
+                        font-size: 30px;
+                        line-height: 30px;
+                        padding: 10px;
+                        padding-right: 45px;
+    
+                        &:before {
+                            right: 10px;
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+
+                    .wc-pao-addon {
+                        padding: 15px;
+
+                         .form-row {
+                            label {
+                                .option-title {
+                                    font-size: 20px;
+                                }
+                                .woocommerce-Price-amount {
+                                    font-size: 16px;
+                                }
+                                .checkmark {
+                                    width: 60px;
+                                    height: 40px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }   
+
+            .part-images {
+                padding-right: 3%;
+            }
+        }
+    }
+    @media only screen and (max-width: 900px) {
+        padding-top: 0;
         padding-bottom: 55px;
         .parts {
             flex-wrap: wrap;
@@ -2115,16 +2217,26 @@ section.product {
                 padding: 0;
             }
             .part-info {
-                margin-top: 25px;
-                form {
-                    text-align: center;
-                    .single_add_to_cart_button {
-                        margin-left: auto;
-                        margin-right: auto;
+                margin-top: 0px;
+                #product-addons-total {
+                    .price {
+                        font-size: 20px;
+                        .amount {
+                            font-size: 20px;
+                        }
                     }
                 }
-                .price {
-                    font-size: 20px;
+
+                .single_add_to_cart_button {
+                    padding: 20px 35px;
+                }
+          
+            }
+
+            .part-images {
+                margin-top: 25px;
+                .related-products {
+                    margin-top: 0;
                 }
             }
         }
