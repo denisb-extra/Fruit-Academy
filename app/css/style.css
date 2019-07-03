@@ -1872,8 +1872,9 @@ section.blog .box {
       -webkit-transform: translateY(0%);
               transform: translateY(0%);
       background: rgba(200, 44, 44, 0.8); }
-      section.blog .box:hover .caption .title:after {
-        content: ""; }
+      @media only screen and (min-width: 1250px) {
+        section.blog .box:hover .caption .title:after {
+          content: ""; } }
     section.blog .box:hover .image img {
       -webkit-filter: blur(5px);
               filter: blur(5px); }
@@ -1975,6 +1976,7 @@ section.blog .pagination {
   section.blog .pagination .current {
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
+    color: #d54b28;
     padding: 8px 20px; }
   section.blog .pagination a {
     font-family: 'Rubik', sans-serif;
@@ -1999,9 +2001,11 @@ section.blog .pagination {
       margin-top: 30px;
       width: 30%; }
       section.blog .boxes .box .caption {
-        padding: 0 20px; }
+        padding: 0 20px;
+        height: 400px; }
         section.blog .boxes .box .caption .title {
-          font-size: 20px; }
+          font-size: 18px;
+          height: 80px; }
       section.blog .boxes .box:hover {
         top: inherit; }
         section.blog .boxes .box:hover .caption {
@@ -2016,6 +2020,10 @@ section.blog .pagination {
   section.blog .boxes .box {
     width: 30%;
     height: 400px; } }
+
+@media only screen and (max-width: 1000px) {
+  section.blog .boxes .box {
+    width: 46%; } }
 
 @media only screen and (max-width: 600px) {
   section.blog .boxes .box {
@@ -2104,6 +2112,8 @@ section.article .content {
   font-weight: 400;
   font-size: 18px;
   color: #4f4f4f; }
+  section.article .content a {
+    color: #d54b28; }
   section.article .content strong {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
@@ -2114,7 +2124,8 @@ section.article .content {
 section.article .image {
   float: left;
   padding-right: 80px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  padding-top: 25px; }
 
 @media only screen and (max-width: 1200px) {
   section.article .share {
@@ -2139,7 +2150,7 @@ section.article .image {
     position: relative;
     width: 100%;
     left: 0px;
-    top: 0px;
+    top: -5px;
     text-align: left; }
     section.article .share .text {
       font-size: 22px; }
@@ -2165,6 +2176,10 @@ section.more-article .holder {
     font-weight: 700;
     font-size: 30px;
     color: #4f4f4f; }
+    section.more-article .holder .next-article a,
+    section.more-article .holder .back-article a,
+    section.more-article .holder .line a {
+      color: inherit; }
   section.more-article .holder .next-article {
     text-align: right;
     width: 400px; }
@@ -2302,6 +2317,8 @@ section.more-article .holder {
       margin: 45px 0px 0px 0px;
       width: 100%;
       text-align: left; }
+      .red-section.blog .more .read-more a {
+        color: inherit; }
       .red-section.blog .more .read-more .arrow {
         border: solid #b21f24;
         border-width: 0 3px 3px 0;
@@ -2381,6 +2398,52 @@ section.shipment .content {
     font-size: 18px; }
   section.shipment .content p {
     margin-top: 20px; }
+
+section.shipment .filter .holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 70px; }
+  section.shipment .filter .holder .item {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4f4f4f;
+    padding: 20px 35px; }
+    section.shipment .filter .holder .item a {
+      color: inherit; }
+    section.shipment .filter .holder .item:hover {
+      font-family: 'Rubik', sans-serif;
+      font-weight: 500;
+      background-color: #f2f2f2;
+      cursor: pointer; }
+    section.shipment .filter .holder .item.active {
+      font-family: 'Rubik', sans-serif;
+      font-weight: 500;
+      background-color: #f2f2f2; }
+    section.shipment .filter .holder .item:after {
+      display: block;
+      content: attr(title);
+      font-family: 'Rubik', sans-serif;
+      font-weight: 500;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden; }
+
+section.shipment .prices .title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #4f4f4f;
+  text-align: right;
+  padding: 0px 70px;
+  margin-top: 100px;
+  margin-bottom: 30px; }
+
+section.shipment .prices p {
+  margin-top: 20px; }
 
 section.shipment .filter .holder {
   display: -webkit-box;
@@ -2902,8 +2965,7 @@ section.contact .contact-form {
       color: #4f4f4f; }
   section.contact .contact-form .wpcf7 select {
     background: url(../images/inner/contact/arrow.png) 10% no-repeat #f0f0f0;
-    width: calc(25% - 20px);
-    margin: 10px 10px;
+    width: 100%;
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none; }
@@ -2973,7 +3035,7 @@ section.contact .contact-form {
         text-align: center;
         margin-bottom: 30px; }
         section.contact .icons .holder .icon .text {
-          font-size: 22px; }
+          font-size: 20px; }
         section.contact .icons .holder .icon .sub-text {
           font-size: 18px; }
   section.contact .contact-form {
@@ -2987,10 +3049,12 @@ section.contact .contact-form {
       width: calc(100% - 20px);
       margin: 10px 10px; }
     section.contact .contact-form .wpcf7 select {
-      width: calc(100% - 20px); }
+      width: 100%; }
     section.contact .contact-form .wpcf7 input[type="submit"] {
       margin-bottom: 30px;
       border: 1px solid #f0f0f0; }
+    section.contact .contact-form .wpcf7 .wpcf7-response-output {
+      bottom: 0px; }
   section.contact .title {
     font-size: 24px; }
   section.contact .content {
@@ -2999,13 +3063,10 @@ section.contact .contact-form {
     margin-top: 0px;
     margin-bottom: 30px; } }
 
-footer.contact {
+.contact-footer footer {
   z-index: 1;
   top: -90px;
   padding-top: 200px; }
-  @media only screen and (max-width: 1000px) {
-    footer.contact {
-      padding-top: 150px; } }
 
 /* --------------------- /Section contact ---------------------- */
 /* ---------------------- Section products ---------------------- */

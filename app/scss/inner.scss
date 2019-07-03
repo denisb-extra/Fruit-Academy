@@ -198,7 +198,6 @@ section.about {
 
 /* --------------------- /Section about ---------------------- */
 
-
 /* --------------------- /Section about ---------------------- */
 
 
@@ -247,8 +246,12 @@ section.blog {
                 transform: translateY(0%);
                 background: rgba(200, 44, 44, 0.8);
                 .title {
-                    &:after {
-                        content: "";
+                    @media only screen and (min-width: 1250px) {
+                        &:after {
+                        
+                            content: "";
+
+                        }
                     }
                 }
             }
@@ -363,6 +366,7 @@ section.blog {
         padding: 0px 0px 0px 0px;
         .current {
             @include f-b;
+            color:#d54b28;
             padding: 8px 20px;
         }
         a {
@@ -394,7 +398,8 @@ section.blog {
                 .caption {
                     padding: 0 20px;
                     .title {
-                        font-size: 20px;
+                        font-size: 18px;
+                        height: 80px;
                     }
                 }
                 &:hover {
@@ -538,6 +543,7 @@ section.article {
         float: left;
         padding-right: 80px;
         padding-bottom: 30px;
+        padding-top: 25px;
     }
     @media only screen and (max-width: $tw) {
         .share {
@@ -567,7 +573,7 @@ section.article {
             position: relative;
             width: 100%;
             left: 0px;
-            top: 0px;
+            top: -5px;
             text-align: left;
             .text {
                 font-size: 22px;
@@ -605,6 +611,10 @@ section.more-article {
             @include f-b;
             font-size: 30px;
             color: #4f4f4f;
+
+            a {
+                color: inherit;
+            }
         }
         .next-article {
             text-align: right;
@@ -869,6 +879,10 @@ section.shipment {
                 font-size: 18px;
                 color: #4f4f4f;
                 padding: 20px 35px;
+
+                a {
+                    color:inherit;
+                }
                 &:hover {
                     @include f-m;
                     background-color: #f2f2f2;
@@ -1497,7 +1511,7 @@ section.contact {
                     text-align: center;
                     margin-bottom: 30px;
                     .text {
-                        font-size: 22px;
+                        font-size: 20px;
                     }
                     .sub-text {
                         font-size: 18px;
@@ -1519,11 +1533,16 @@ section.contact {
                     margin: 10px 10px;
                 }
                 select {
-                    width: calc(100% - 20px);
+                    width: 100%;
                 }
                 input[type="submit"] {
                     margin-bottom: 30px;
                     border: 1px solid #f0f0f0;
+                }
+                .wpcf7-response-output {
+                   
+                    bottom: 0px;
+                   
                 }
             }
         }
@@ -1547,7 +1566,14 @@ footer.contact {
     @media only screen and (max-width: $mw) {
         padding-top: 150px;
     }
-}
+  
+    @media only screen and (max-width: 1000px) {
+      footer {
+        padding-top: 150px; } 
+    }
+  
+  }
+
 
 
 /* --------------------- /Section contact ---------------------- */
