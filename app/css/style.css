@@ -1331,7 +1331,8 @@ section.cats-and-feedback {
           color: #fff;
           -webkit-transition: 0.25s;
           transition: 0.25s;
-          position: absolute; }
+          position: absolute;
+          top: 65px; }
         .part-cats .boxes .box .info .products {
           opacity: 0;
           -webkit-transition: 0.5s;
