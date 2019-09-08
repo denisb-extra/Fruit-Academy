@@ -11,9 +11,11 @@ $(document).ready(function ($) {
             
         if (distanceY > shrinkOn) {
             $("header" ).addClass("scrolled");
+            $(".fruit-of-the-day" ).addClass("scrolled");
             //$(".logo-cont img").attr("src", "images/index/logo-dark.png");
         } else {
             $("header" ).removeClass("scrolled");
+             $(".fruit-of-the-day" ).removeClass("scrolled");
             //$(".logo-cont img").attr("src", "images/index/logo.png");
         }
     }
@@ -42,7 +44,7 @@ $(document).ready(function ($) {
 
     $(".mobile-menu .sub-menu").each(function( index ) {
         var mainMenuItem = $(this).parent(".menu-item"); 
-        var arrow = jQuery("<div class='open-arrow'><span>&#x25BC;</span></div>"); 
+        var arrow = jQuery("<div class='open-arrow'><i class='fa fa-angle-down' aria-hidden='true'></i></div>"); 
         $(mainMenuItem).append(arrow);   
 
        

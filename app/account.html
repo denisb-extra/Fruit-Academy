@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+	<title>Fruit Academy</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/jquery-3.2.0.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css">
+	<script src="plugins/owl-carousel/owl.carousel.js"></script>
+
+	<link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css">
+	<script src="plugins/fancybox/jquery.fancybox.js"></script>
+
+	<script src="plugins/scrollreveal/scrollreveal.js"></script>
+	<script src="plugins/slider-img-text/slider.js"></script>
+	<script src="plugins/tilt/tilt.jquery.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="header-inner">
+			<div class="parts">
+				<div class="part-right">
+					<div class="logo">
+						<div class="image"><img src="images/logo-image.png" alt=""></div>
+						<div class="text"><img src="images/logo-txt.png" alt=""></div>
+					</div>
+				</div>
+				<div class="part-left">
+					<div class="icons">
+						<div class="icon"><img src="images/index/header/icons/1.jpg" alt=""></div>
+						<div class="icon"><img src="images/index/header/icons/2.jpg" alt=""></div>
+						<div class="icon"><img src="images/index/header/icons/3.jpg" alt=""></div>
+					</div>
+					<div class="cart">
+						<div class="icon"><img src="images/index/header/cart.png" alt=""></div>
+						<div class="number">(1)</div>
+					</div>
+					<div class="sep"></div>
+					<div class="menu-button">
+						<div class="text">
+							<p>תפריט</p>
+							<p>MENU</p>
+						</div>
+						<div class="toggle-button">
+							<span class="inner">
+								<div></div>
+								<div></div>
+								<div></div>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mobile-menu-cont">
+			<ul class="mobile-menu">
+				<li class="current_page_item"><a href="">ראשי</a></li>
+				<li><a href="">אודותינו</a></li>
+				<li><a href="">קורס ברמנים</a></li>
+				<li><a href="">סדנאות</a></li>
+				<li><a href="">סניפים</a></li>
+				<li><a href="">אלכוהול וקוקטיילים</a></li>
+				<li><a href="">בלוג</a></li>
+				<li><a href="">צור קשר</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<section class="top-inner">
+		<img src="images/inner/top/bg.svg" alt="" class="bg">
+		<div class="section-inner">
+			<p class="title">שם המאמר</p>
+
+			<div class="breadcrumbs">
+				<p class="line">
+					<span>
+						<span>
+							<a href="#">דף הבית</a>
+							 > <span class="breadcrumb_last">בלוג</span>
+							 > <span class="breadcrumb_last">שם מאמר</span>
+						</span>
+					</span>
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="article woo">
+	    <div class="section-inner">
+	        <div class="wrapper-corners-shadow">
+	            <div class="content">
+	                <div class="woocommerce">
+	                    <div class="woocommerce-notices-wrapper"></div>
+
+	                    <div class="u-columns col2-set" id="customer_login">
+
+	                        <div class="u-column1 col-1">
+
+	                            <h2>התחבר</h2>
+
+	                            <form class="woocommerce-form woocommerce-form-login login" method="post">
+
+	                                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+	                                    <label for="username">שם משתמש או כתובת אימייל&nbsp;<span class="required">*</span></label>
+	                                    <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value=""> </p>
+	                                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+	                                    <label for="password">סיסמה&nbsp;<span class="required">*</span></label>
+	                                    <input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password">
+	                                </p>
+
+	                                <p class="form-row">
+	                                    <label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
+	                                        <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever"> <span>זכור אותי</span>
+	                                    </label>
+	                                    <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="8064e4f6ea">
+	                                    <input type="hidden" name="_wp_http_referer" value="/my-account/">
+	                                    <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="התחבר">התחבר</button>
+	                                </p>
+	                                <p class="woocommerce-LostPassword lost_password">
+	                                    <a href="http://ftuit.s201.upress.link/my-account/lost-password/">איפוס סיסמה</a>
+	                                </p>
+
+	                            </form>
+
+	                        </div>
+
+	                        <div class="u-column2 col-2">
+
+	                            <h2>הרשמה</h2>
+
+	                            <form method="post" class="woocommerce-form woocommerce-form-register register">
+
+	                                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+	                                    <label for="reg_email">כתובת אימייל&nbsp;<span class="required">*</span></label>
+	                                    <input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="reg_email" autocomplete="email" value=""> </p>
+
+	                                <p>הסיסמה תישלח לכתובת האימייל שלך.</p>
+
+	                                <div class="woocommerce-privacy-policy-text"></div>
+	                                <p class="woocommerce-FormRow form-row">
+	                                    <input type="hidden" id="woocommerce-register-nonce" name="woocommerce-register-nonce" value="79f2e587c1">
+	                                    <input type="hidden" name="_wp_http_referer" value="/my-account/">
+	                                    <button type="submit" class="woocommerce-Button button" name="register" value="הרשמה">הרשמה</button>
+	                                </p>
+
+	                            </form>
+
+	                        </div>
+
+	                    </div>
+
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+	<section class="article woo">
+	    <div class="section-inner">
+	        <div class="wrapper-corners-shadow">
+	            <div class="content">
+	                <div class="woocommerce">
+	                    <nav class="woocommerce-MyAccount-navigation">
+	                        <ul>
+	                            <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--dashboard">
+	                                <a href="http://ftuit.s201.upress.link/my-account/">לוח בקרה</a>
+	                            </li>
+	                            <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--orders">
+	                                <a href="http://ftuit.s201.upress.link/my-account/orders/">הזמנות</a>
+	                            </li>
+	                            <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--downloads">
+	                                <a href="http://ftuit.s201.upress.link/my-account/downloads/">הורדות</a>
+	                            </li>
+	                            <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-address">
+	                                <a href="http://ftuit.s201.upress.link/my-account/edit-address/">כתובות</a>
+	                            </li>
+	                            <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-account is-active">
+	                                <a href="http://ftuit.s201.upress.link/my-account/edit-account/">פרטי חשבון</a>
+	                            </li>
+	                            <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--customer-logout">
+	                                <a href="http://ftuit.s201.upress.link/my-account/customer-logout/?_wpnonce=384c6c2fa4">התנתקות</a>
+	                            </li>
+	                        </ul>
+	                    </nav>
+
+	                    <div class="woocommerce-MyAccount-content">
+	                        <div class="woocommerce-notices-wrapper"></div>
+	                        <form class="woocommerce-EditAccountForm edit-account" action="" method="post">
+
+	                            <p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
+	                                <label for="account_first_name">שם פרטי&nbsp;<span class="required">*</span></label>
+	                                <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_first_name" id="account_first_name" autocomplete="given-name" value="Denis">
+	                            </p>
+	                            <p class="woocommerce-form-row woocommerce-form-row--last form-row form-row-last">
+	                                <label for="account_last_name">שם משפחה&nbsp;<span class="required">*</span></label>
+	                                <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_last_name" id="account_last_name" autocomplete="family-name" value="Bogdanov">
+	                            </p>
+	                            <div class="clear"></div>
+
+	                            <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+	                                <label for="account_display_name">שם תצוגה&nbsp;<span class="required">*</span></label>
+	                                <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_display_name" id="account_display_name" value="ftuitsup_admin"> <span><em>השם שיופיע במקטע החשבון ובביקורות</em></span>
+	                            </p>
+	                            <div class="clear"></div>
+
+	                            <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+	                                <label for="account_email">כתובת אימייל&nbsp;<span class="required">*</span></label>
+	                                <input type="email" class="woocommerce-Input woocommerce-Input--email input-text" name="account_email" id="account_email" autocomplete="email" value="ohad@extra.co.il">
+	                            </p>
+
+	                            <fieldset>
+	                                <legend>שינוי סיסמה</legend>
+
+	                                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+	                                    <label for="password_current">סיסמה נוכחית (כדי להשאיר ללא שינוי יש להשאיר ריק)</label>
+	                                    <input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_current" id="password_current" autocomplete="off">
+	                                </p>
+	                                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+	                                    <label for="password_1">סיסמה חדשה (כדי להשאיר ללא שינוי יש להשאיר ריק)</label>
+	                                    <input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_1" id="password_1" autocomplete="off">
+	                                </p>
+	                                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+	                                    <label for="password_2">יש לאשר את הסיסמה החדשה</label>
+	                                    <input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_2" id="password_2" autocomplete="off">
+	                                </p>
+	                            </fieldset>
+	                            <div class="clear"></div>
+
+	                            <p>
+	                                <input type="hidden" id="save-account-details-nonce" name="save-account-details-nonce" value="b68c99f249">
+	                                <input type="hidden" name="_wp_http_referer" value="/my-account/edit-account/">
+	                                <button type="submit" class="woocommerce-Button button" name="save_account_details" value="שמירת שינויים">שמירת שינויים</button>
+	                                <input type="hidden" name="action" value="save_account_details">
+	                            </p>
+
+	                        </form>
+
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+	<footer>
+		<img src="images/index/footer/bg-bottom.svg" alt="" class="bg-bottom">
+
+		<div class="section-inner">
+			<div class="bar-form">
+				<div class="image">
+					<img src="images/index/footer/present.png" alt="">
+				</div>
+				<div class="content">
+					<p class="title">הצטרפות לקוחות חדשים</p>
+					<p class="subtitle">להרשמה למועדון החברים שלנו וקבלת 10 ש"ח לקנייה ראשונה, מלא/י את המייל שלך:</p>
+					<div role="form" class="wpcf7" id="wpcf7-f2384-o1" lang="he-IL" dir="rtl" data-font-size="16"
+						data-font-size-type="px">
+						<div class="screen-reader-response" data-font-size="16" data-font-size-type="px"></div>
+						<form action="/#wpcf7-f2384-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+							<span class="wpcf7-form-control-wrap your-email" data-font-size="16"
+								data-font-size-type="px"><input type="email" name="your-email" value="" size="40"
+									class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+									aria-required="true" aria-invalid="false" placeholder="אימייל"></span>
+							<input type="submit" value="שלח" class="wpcf7-form-control wpcf7-submit"><span
+								class="ajax-loader"></span>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="cols">
+				<div class="col contact">
+					<p class="title">טלפון להזמנות</p>
+					<div class="content">
+						<p>טלפון: <a href="tel:1-700-70-70-71">1-700-70-70-71</a></p>
+						<p>חול: <a href="tel:1-700-70-70-71">1-700-70-70-71</a></p>
+						<p>פקס: <a href="tel:1-700-70-70-71">1-700-70-70-71</a></p>
+
+						<div class="social">
+							<p class="text">עקבו אחרינו</p>
+							<div class="icons">
+								<a href="#">
+									<img src="images/index/footer/insta.png" alt="">
+								</a>
+								<a href="#">
+									<img src="images/index/footer/fb.png" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<p class="title">האקדמיה לפירות</p>
+					<div class="content">
+						<div class="menu-cont">
+							<ul class="menu">
+								<li><a href="">עמוד הבית</a></li>
+								<li><a href="">אודות</a></li>
+								<li><a href="">קטלוג</a></li>
+								<li><a href="">תווי תקן</a></li>
+								<li><a href="">תווי תקן</a></li>
+								<li><a href="">בלוג</a></li>
+								<li><a href="">יצירת קשר</a></li>
+								<li><a href="">עמוד הבית</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<p class="title">משלוחי פירות מעוצבים</p>
+					<div class="content">
+						<div class="menu-cont">
+							<ul class="menu">
+								<li><a href="">עמוד הבית</a></li>
+								<li><a href="">אודות</a></li>
+								<li><a href="">קטלוג</a></li>
+								<li><a href="">תווי תקן</a></li>
+								<li><a href="">בלוג</a></li>
+								<li><a href="">יצירת קשר</a></li>
+								<li><a href="">אודות</a></li>
+								<li><a href="">קטלוג</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<p class="title">משלוחי פירות מעוצבים</p>
+					<div class="content">
+						<div class="menu-cont">
+							<ul class="menu">
+								<li><a href="">עמוד הבית</a></li>
+								<li><a href="">אודות</a></li>
+								<li><a href="">קטלוג</a></li>
+								<li><a href="">תווי תקן</a></li>
+								<li><a href="">תווי תקן</a></li>
+								<li><a href="">בלוג</a></li>
+								<li><a href="">יצירת קשר</a></li>
+								<li><a href="">עמוד הבית</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<p class="title">עמודה נוספת לקישורים </p>
+					<div class="content">
+						<div class="menu-cont">
+							<ul class="menu">
+								<li><a href="">עמוד הבית</a></li>
+								<li><a href="">אודות</a></li>
+								<li><a href="">קטלוג</a></li>
+								<li><a href="">תווי תקן</a></li>
+								<li><a href="">בלוג</a></li>
+								<li><a href="">יצירת קשר</a></li>
+								<li><a href="">אודות</a></li>
+								<li><a href="">קטלוג</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="part-bottom">
+				<div class="cards">
+					<img src="images/index/footer/cards.jpg" alt="">
+				</div>
+				<div class="cert">
+					<img src="images/index/footer/cert.jpg" alt="">
+				</div>
+				<p class="copy">כל הזכויות שמורות © - 2019 האקדמיה לפירות</p>
+				<div class="sep">|</div>
+				<p class="credit">
+					<img src="images/index/footer/extra.png" alt="">
+					<span>דיגיטל</span>
+				</p>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>

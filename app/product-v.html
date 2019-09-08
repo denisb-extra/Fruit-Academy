@@ -22,7 +22,9 @@
 	<script src="plugins/tilt/tilt.jquery.js"></script> 
 
 	<script src="plugins/jquery-ui/jquery-ui.js"></script>
-
+	
+	<link rel="stylesheet" href="plugins/juxtapose/css/juxtapose.css">
+	<script src='plugins/juxtapose/js/juxtapose.js'></script>
 
 </head>
 <body>
@@ -87,40 +89,10 @@
 			</div>
 		</div>
 	</section>
-	
-	<div class="floating-bar">
-		<div class="section-inner">
-			<div class="parts">
-				<div class="part-right">
-					<p class="title">צבעוני באקדמיה</p>
-				</div>
-
-				<div class="part-left">
-					<div class="button">
-						הוספה לסל
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<section class="product">
 	    <div class="section-inner wide">
 	        <div class="wrapper-corners-shadow">
-	        	<div class="share">
-					<div class="text">שתף עם חברים</div>
-					<img class="image-share" src="images/icons/share.png">
-					<div class="popup">
-						<div class="holder">
-							<div class="images">
-								<a><img src="images/icons/facebook.png"></a>
-								<a><img src="images/icons/instegtam.png"></a>
-								<a><img src="images/icons/call.png"></a>
-								<a><img src="images/icons/mail.png"></a>
-							</div>
-						</div>
-					</div>
-				</div>
 	            <div class="woocommerce-notices-wrapper"></div>
 	            <div class="parts">
 	                <div class="part part-info">
@@ -134,8 +106,7 @@
 	                        <p><strong>**ניתן לבצע התאמה אישית לכל מגש בהתאם לצרכים שלך</strong></p>
 	                        <p>(העיצוב יכול להשתנות בהתאם לשיקול דעתו של המעצב)</p>
 	                    </div>
-						<p class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₪</span>300.00</span></p>
-						
+
 	                    <script type="text/javascript">
 	                        var product_variations_11567 = [{
 	                            "attributes": {
@@ -514,7 +485,13 @@
 	                </div>
 	                <div class="part part-images">
 	                	<div class="gallery">
-	                    <a class="main" href="http://ftuit.s201.upress.link/wp-content/uploads/2019/06/מגשי-פירות-צבעוני-באקדמיה1.jpg" data-fancybox="">
+
+	                	<div class="juxtapose">
+							<img src="http://ftuit.s201.upress.link/wp-content/uploads/2019/06/זר-אדום.jpg" alt="A cat" />
+							<img src="http://ftuit.s201.upress.link/wp-content/uploads/2019/06/זר-פירות-במשפך.jpg" alt="A bear"/>
+						</div>
+
+	                    <a style="display:none;" class="main" href="http://ftuit.s201.upress.link/wp-content/uploads/2019/06/מגשי-פירות-צבעוני-באקדמיה1.jpg" data-fancybox="">
 	                        <img src="http://ftuit.s201.upress.link/wp-content/uploads/2019/06/מגשי-פירות-צבעוני-באקדמיה1.jpg" alt="">
 	                    </a>
 
@@ -780,7 +757,10 @@
 		</section>
 
 	</div>
-
+<div class="juxtapose">
+							<img src="http://ftuit.s201.upress.link/wp-content/uploads/2019/06/זר-אדום.jpg" alt="A cat" />
+							<img src="http://ftuit.s201.upress.link/wp-content/uploads/2019/06/זר-פירות-במשפך.jpg" alt="A bear"/>
+						</div>
 	<footer>
 		<img src="images/index/footer/bg-bottom.svg" alt="" class="bg-bottom">
 
@@ -914,8 +894,12 @@
 	<script>
 	
 		$(document).ready(function ($) {
+			$("body").css("direction", "ltr");
+			juxtapose.scanPage();
+
 			$( ".custom_options" ).accordion({collapsible: true, heightStyle: "content"});
 
+			
 			if($(window).width() <= 900) $(".part-images .gallery").insertAfter(".part-info .title");
 
 			$(".thumb").on("click", function(){

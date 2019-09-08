@@ -20,6 +20,10 @@
 	<script src="plugins/scrollreveal/scrollreveal.js"></script> 
 	<script src="plugins/slider-img-text/slider.js"></script> 
 	<script src="plugins/tilt/tilt.jquery.js"></script> 
+
+	<link rel="stylesheet" href="plugins/juxtapose/css/juxtapose.css">
+	<script src='plugins/juxtapose/js/juxtapose.js'></script>
+
 </head>
 <body>
 	<header>
@@ -35,11 +39,100 @@
 					<div class="icons">
 						<div class="icon"><img src="images/index/header/icons/1.jpg" alt=""></div>
 						<div class="icon"><img src="images/index/header/icons/2.jpg" alt=""></div>
-						<div class="icon"><img src="images/index/header/icons/3.jpg" alt=""></div>
+						<div class="icon kashrut">
+							<img src="images/index/header/icons/3.jpg" alt="">
+							
+							<div class="popup">
+								<img src="images/index/header/kashrut.png" alt="">
+							</div>
+						</div>
 					</div>
 					<div class="cart">
 						<div class="icon"><img src="images/index/header/cart.png" alt=""></div>
 						<div class="number">(1)</div>
+
+						<div class="popup">
+							<div class="products">
+								<div class="product">
+									<div class="image">
+										<img src="images/index/product-cats/cart-small.jpg" alt="">
+									</div>
+									<div class="info">
+										<p class="name">מיטה דגם טוקיו שחור</p>
+										<p class="quantity">כמות: 4</p>
+									</div>
+									<div class="price">
+										מחיר:
+										<span class="woocommerce-Price-amount amount">
+										<span class="woocommerce-Price-currencySymbol">₪</span>2,100</span>
+									</div>
+								</div>
+								<div class="product">
+									<div class="image">
+										<img src="images/index/product-cats/cart-small.jpg" alt="">
+									</div>
+									<div class="info">
+										<p class="name">שם המוצר</p>
+										<p class="quantity">כמות: 4</p>
+									</div>
+									<div class="price">
+										מחיר:
+										<span class="woocommerce-Price-amount amount">
+										<span class="woocommerce-Price-currencySymbol">₪</span>2,100</span>
+									</div>
+								</div>
+								<div class="product">
+									<div class="image">
+										<img src="images/index/product-cats/cart-small.jpg" alt="">
+									</div>
+									<div class="info">
+										<p class="name">שם המוצר</p>
+										<p class="quantity">כמות: 4</p>
+									</div>
+									<div class="price">
+										מחיר:
+										<span class="woocommerce-Price-amount amount">
+										<span class="woocommerce-Price-currencySymbol">₪</span>2,100</span>
+									</div>
+								</div>
+								<div class="product">
+									<div class="image">
+										<img src="images/index/product-cats/cart-small.jpg" alt="">
+									</div>
+									<div class="info">
+										<p class="name">שם המוצר</p>
+										<p class="quantity">כמות: 4</p>
+									</div>
+									<div class="price">
+										מחיר:
+										<span class="woocommerce-Price-amount amount">
+										<span class="woocommerce-Price-currencySymbol">₪</span>2,100</span>
+									</div>
+								</div>
+								<div class="product">
+									<div class="image">
+										<img src="images/index/product-cats/cart-small.jpg" alt="">
+									</div>
+									<div class="info">
+										<p class="name">שם המוצר</p>
+										<p class="quantity">כמות: 4</p>
+									</div>
+									<div class="price">
+										מחיר:
+										<span class="woocommerce-Price-amount amount">
+										<span class="woocommerce-Price-currencySymbol">₪</span>2,100</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="total">
+								<p>סהכ: 210.00</p>
+							</div>
+							<div class="buttons">
+								<a href="#" class="button button-cart">סל קניות</a>
+								<a href="#" class="button button-checkout">מעבר לרכישה</a>
+							</div>
+						</div>
 					</div>
 					<div class="sep"></div>
 					<div class="menu-button">
@@ -59,20 +152,59 @@
 			</div>
 		</div>
 
-		<div class="mobile-menu-cont">
-			<ul class="mobile-menu">
-				<li class="current_page_item"><a href="">ראשי</a></li>
-				<li><a href="">אודותינו</a></li>
-				<li><a href="">קורס ברמנים</a></li>
-				<li><a href="">סדנאות</a></li>
-				<li><a href="">סניפים</a></li>
-				<li><a href="">אלכוהול וקוקטיילים</a></li>
-				<li><a href="">בלוג</a></li>
-				<li><a href="">צור קשר</a></li>
+		<div class="mobile-menu-cont open"><ul id="menu-%d7%aa%d7%a4%d7%a8%d7%99%d7%98-%d7%a8%d7%90%d7%a9%d7%99" class="mobile-menu"><li id="menu-item-11328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-11328"><a href="http://ftuit.s201.upress.link/" aria-current="page">עמוד בית</a></li>
+			<li id="menu-item-11341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11341"><a href="http://ftuit.s201.upress.link/%d7%90%d7%95%d7%93%d7%95%d7%aa/">אודות</a></li>
+			<li id="menu-item-11823" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11823"><a href="#">המוצרים שלנו</a>
+			<ul class="sub-menu" style="display: none;">
+				<li id="menu-item-11502" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-11502"><a href="http://ftuit.s201.upress.link/product-category/%d7%9e%d7%92%d7%a9%d7%99-%d7%a4%d7%99%d7%a8%d7%95%d7%aa/">מגשי פירות</a></li>
+				<li id="menu-item-11504" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-11504"><a href="http://ftuit.s201.upress.link/product-category/%d7%a1%d7%9c%d7%a1%d7%9c%d7%aa-%d7%a4%d7%99%d7%a8%d7%95%d7%aa/">סלסלת פירות</a></li>
+				<li id="menu-item-11499" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-11499"><a href="http://ftuit.s201.upress.link/product-category/%d7%96%d7%a8%d7%99-%d7%a4%d7%99%d7%a8%d7%95%d7%aa/">זרי פירות</a></li>
+				<li id="menu-item-11500" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-11500"><a href="http://ftuit.s201.upress.link/product-category/%d7%9e%d7%92%d7%a9%d7%99-%d7%90%d7%99%d7%a8%d7%95%d7%97/">מגשי אירוח</a></li>
+				<li id="menu-item-11501" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-11501"><a href="http://ftuit.s201.upress.link/product-category/%d7%9e%d7%92%d7%a9%d7%99-%d7%a1%d7%95%d7%a9%d7%99-%d7%a4%d7%99%d7%a8%d7%95%d7%aa/">מגשי סושי פירות</a></li>
+				<li id="menu-item-11498" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-11498"><a href="http://ftuit.s201.upress.link/product-category/%d7%a9%d7%a4%d7%a2-%d7%94%d7%9e%d7%98%d7%91%d7%97/">שפע המטבח</a></li>
+				<li id="menu-item-11505" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-11505"><a href="http://ftuit.s201.upress.link/product-category/%d7%aa%d7%99%d7%91%d7%95%d7%aa-%d7%aa%d7%a2%d7%a0%d7%95%d7%92/">תיבות תענוג</a></li>
+				<li id="menu-item-11717" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-11717"><a href="http://ftuit.s201.upress.link/product-category/%d7%9e%d7%95%d7%a6%d7%a8%d7%99%d7%9d-%d7%9e%d7%a9%d7%9c%d7%99%d7%9e%d7%99%d7%9d/">מוצרים משלימים</a></li>
 			</ul>
-		</div>
+			</li>
+			<li id="menu-item-11715" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11715"><a target="_blank" rel="noopener noreferrer" href="http://ftuit.s201.upress.link/wp-content/uploads/2019/07/קטלוג.pdf">להורדת הקטלוג</a></li>
+			<li id="menu-item-11824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11824"><a href="http://ftuit.s201.upress.link/%d7%9e%d7%97%d7%99%d7%a8%d7%95%d7%9f-%d7%9e%d7%a9%d7%9c%d7%95%d7%97%d7%99%d7%9d/">מחירון משלוחים</a></li>
+			<li id="menu-item-11342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11342"><a href="http://ftuit.s201.upress.link/%d7%91%d7%9c%d7%95%d7%92/">בלוג</a></li>
+			<li id="menu-item-11340" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11340"><a href="http://ftuit.s201.upress.link/%d7%a6%d7%95%d7%a8-%d7%a7%d7%a9%d7%a8/">צור קשר</a></li>
+			</ul></div>
 	</header>
 
+	<a href="tel:053-5220216" class="tel-mobile">
+		<i class="fa fa-phone" aria-hidden="true"></i>
+	</a>
+	
+	<div class="fruit-of-the-day">
+		<div class="button">
+			<img src="images/index/header/leaf.png" alt="">
+			<div class="cont">
+				<p>מבחר הפירות
+				<br>היומי</p>
+			</div>
+			
+		</div>
+
+		<div class="popup">
+			<div class="fruit">
+				<img src="http://ftuit.s201.upress.link/wp-content/uploads/2019/07/watermelon-1.jpg" alt="">
+			</div>
+			<div class="list">
+				<ul>
+					<li>ויטמין A</li>
+					<li>ויטמין B</li>
+					<li>ויטמין C</li>
+					<li>ויטמין D</li>
+					<li>ויטמין E</li>
+					<li>ויטמין F</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	
 	<section class="top-slider">
 		<img src="images/index/top-slider/bg.svg" alt="" class="bg">
 		<img src="images/index/top-slider/wave-grey.svg" alt="" class="wave-grey">
@@ -83,6 +215,7 @@
 		
 		
 		<div class="section-inner">
+			
 			<div class="part-slider">
 				<p class="title">האקדמיה לפירות</p>
 				<p class="subtitle">פירות פרימיום - עד אליך!</p>
@@ -95,6 +228,7 @@
 						<div class="text">
 							<p class="line-1">תיבת תענוגות XL-S</p>
 							<p class="line-2">החל מ- 340 ₪</p>
+							<div class="button">צפייה במוצר</div>
 						</div>
 					</a>
 
@@ -180,119 +314,228 @@
 		<div class="section-inner wide">
 			<div class="parts">
 				<div class="part part-cats">
+
 					<div class="boxes">
-						<div class="box">
-							<div class="inner">
-								<div class="bg-img"><img src="images/index\categories/1.png" alt=""></div>
-								<div class="info">
-									<p class="title">תיבת תענוגות</p>
-									<p class="subtitle">החל מ- 240 ₪</p>
-									<div class="products">
-										<div class="product">
-											<p class="title">תיבת תענוגות S</p>
-											<p class="price">מחיר: 460 ₪</p>
-										</div>
-										<div class="product">
-											<p class="title">תיבת תענוגות M</p>
-											<p class="price">מחיר: 460 ₪</p>
-										</div>
-										<div class="product">
-											<p class="title">תיבת תענוגות L</p>
-											<p class="price">מחיר: 460 ₪</p>
-										</div>
-										<div class="product">
-											<p class="title">תיבת תענוגות XL</p>
-											<p class="price">מחיר: 460 ₪</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 
-						<div class="box">
-							<div class="inner">
-								<div class="bg-img"><img src="images/index/top-slider/product-slider/product-3.png" alt=""></div>
-								<div class="info">
-									<p class="title">סלסלת פירות</p>
-									<p class="subtitle">החל מ- 240 ₪</p>
-									<div class="products">
-										<div class="product">
-											<p class="title">תיבת תענוגות S</p>
-											<p class="price">מחיר: 460 ₪</p>
-										</div>
-										<div class="product">
-											<p class="title">תיבת תענוגות M</p>
-											<p class="price">מחיר: 460 ₪</p>
-										</div>
-										<div class="product">
-											<p class="title">תיבת תענוגות L</p>
-											<p class="price">מחיר: 460 ₪</p>
-										</div>
-										<div class="product">
-											<p class="title">תיבת תענוגות XL</p>
-											<p class="price">מחיר: 460 ₪</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+					    <div class="box">
+					        <a href="http://ftuit.s201.upress.link/product-category/%d7%9e%d7%92%d7%a9%d7%99-%d7%a4%d7%99%d7%a8%d7%95%d7%aa/" class="link"></a>
+					        <div class="inner">
+					            <div class="bg-img"><img src="http://ftuit.s201.upress.link/wp-content/uploads/2019/07/L-מגש-S-450x300.png" alt="מגשי פירות מעוצבים"></div>
+					            <div class="info">
+					                <a href="http://ftuit.s201.upress.link/product-category/%d7%9e%d7%92%d7%a9%d7%99-%d7%a4%d7%99%d7%a8%d7%95%d7%aa/" class="title">מגשי פירות</a>
 
-						<div class="box">
-							<div class="inner">
-								<div class="bg-img"><img src="images/index\categories/2.png" alt=""></div>
-								<div class="info">
-									<p class="title">מגשי פירות</p>
-									<p class="subtitle">החל מ- 240 ₪</p>
-									<div class="products">
-										<div class="product">
-											<p class="title">תיבת תענוגות S</p>
-											<p class="price">מחיר: 460 ₪</p>
-										</div>
-										<div class="product">
-											<p class="title">תיבת תענוגות M</p>
-											<p class="price">מחיר: 460 ₪</p>
-										</div>
-										<div class="product">
-											<p class="title">תיבת תענוגות L</p>
-											<p class="price">מחיר: 460 ₪</p>
-										</div>
-										<div class="product">
-											<p class="title">תיבת תענוגות XL</p>
-											<p class="price">מחיר: 460 ₪</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+					                <p class="subtitle">מגשי פירות חתוכים ומעוצבים
+					                    <br>הכוללים מגוון עשיר ומפנק
+					                    <br>של פירות העונה</p>
+					                <div class="products">
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%a6%d7%91%d7%a2%d7%95%d7%a0%d7%99-%d7%91%d7%90%d7%a7%d7%93%d7%9e%d7%99%d7%94/" class="product">
+					                        <p class="title">מגש צבעוני באקדמיה</p>
+					                        <p class="price">החל מ 190₪</p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%a6%d7%91%d7%a2%d7%95%d7%a0%d7%99-%d7%91%d7%90%d7%a7%d7%93%d7%9e%d7%99%d7%94-%d7%94%d7%a2%d7%aa%d7%a7-copy/" class="product">
+					                        <p class="title">מגש עגול</p>
+					                        <p class="price">החל מ 220₪</p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%a6%d7%91%d7%a2%d7%95%d7%a0%d7%99-%d7%91%d7%90%d7%a7%d7%93%d7%9e%d7%99%d7%94-%d7%94%d7%a2%d7%aa%d7%a7-copy-copy/" class="product">
+					                        <p class="title">מגש בשילוב עם סושי</p>
+					                        <p class="price">החל מ 260₪</p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%9e%d7%92%d7%a9-%d7%96%d7%9b%d7%95%d7%9b%d7%99%d7%aa/" class="product">
+					                        <p class="title">מגש זכוכית</p>
+					                        <p class="price">החל מ 230₪</p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%9e%d7%92%d7%a9-%d7%9e%d7%97%d7%95%d7%9c%d7%a7/" class="product">
+					                        <p class="title">מגש מחולק</p>
+					                        <p class="price">החל מ 190₪</p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%9e%d7%92%d7%a9-%d7%a4%d7%99%d7%a8%d7%95%d7%aa-%d7%99%d7%91%d7%a9%d7%99%d7%9d/" class="product">
+					                        <p class="title">מגש פירות יבשים</p>
+					                        <p class="price">החל מ 190₪</p>
+					                    </a>
 
-						<div class="box">
-							<div class="inner">
-								<div class="bg-img"><img src="images/index\categories/3.png" alt=""></div>
-								<div class="info">
-									<p class="title">זרי פירות</p>
-									<p class="subtitle">החל מ- 240 ₪</p>
-									<div class="products">
-										<div class="product">
-											<p class="title">תיבת תענוגות S</p>
-											<p class="price">מחיר: 460 ₪</p>
-										</div>
-										<div class="product">
-											<p class="title">תיבת תענוגות M</p>
-											<p class="price">מחיר: 460 ₪</p>
-										</div>
-										<div class="product">
-											<p class="title">תיבת תענוגות L</p>
-											<p class="price">מחיר: 460 ₪</p>
-										</div>
-										<div class="product">
-											<p class="title">תיבת תענוגות XL</p>
-											<p class="price">מחיר: 460 ₪</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+					                </div>
+					            </div>
+					        </div>
+					    </div>
+					    <div class="box">
+					        <a href="http://ftuit.s201.upress.link/product-category/%d7%a1%d7%9c%d7%a1%d7%9c%d7%aa-%d7%a4%d7%99%d7%a8%d7%95%d7%aa/" class="link"></a>
+					        <div class="inner">
+					            <div class="bg-img"><img src="http://ftuit.s201.upress.link/wp-content/uploads/2019/07/IMG_6509-1-450x359.png" alt="סלסלת פירות פרימיום"></div>
+					            <div class="info">
+					                <a href="http://ftuit.s201.upress.link/product-category/%d7%a1%d7%9c%d7%a1%d7%9c%d7%aa-%d7%a4%d7%99%d7%a8%d7%95%d7%aa/" class="title">סלסלת פירות</a>
+
+					                <p class="subtitle">סלסלות פירות במגוון גדלים
+					                    <br>עם פירות העונה חתוכים,
+					                    <br>קלופים וכמובן טריים</p>
+					                <div class="products">
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%a1%d7%9c%d7%a1%d7%9c%d7%aa-%d7%a4%d7%99%d7%a8%d7%95%d7%aa-%d7%90%d7%95%d7%91%d7%9c%d7%99%d7%aa/" class="product">
+					                        <p class="title">סלסלת פירות אובלית</p>
+					                        <p class="price">החל מ 240₪</p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%a1%d7%9c%d7%a1%d7%9c%d7%aa-%d7%a4%d7%99%d7%a8%d7%95%d7%aa-%d7%94%d7%90%d7%a7%d7%93%d7%9e%d7%99%d7%94/" class="product">
+					                        <p class="title">סלסלת פירות האקדמיה</p>
+					                        <p class="price">החל מ 340₪</p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%a1%d7%9c%d7%a1%d7%9c%d7%aa-%d7%a4%d7%99%d7%a8%d7%95%d7%aa-%d7%91%d7%a9%d7%99%d7%9c%d7%95%d7%91-%d7%a9%d7%9c-%d7%99%d7%99%d7%9f-%d7%95%d7%a9%d7%95%d7%a7%d7%95%d7%9c%d7%93/" class="product">
+					                        <p class="title">סלסלה בשילוב של יין ושוקולד</p>
+					                        <p class="price">החל מ 330₪</p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%a1%d7%9c%d7%a1%d7%9c%d7%aa-%d7%a4%d7%99%d7%a8%d7%95%d7%aa-%d7%9e%d7%94%d7%9b%d7%9c-%d7%91%d7%90%d7%a7%d7%93%d7%9e%d7%99%d7%94/" class="product">
+					                        <p class="title">סלסלת פירות מהכל באקדמיה</p>
+					                        <p class="price">החל מ 970₪</p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%a1%d7%9c%d7%a1%d7%9c%d7%aa-%d7%aa%d7%95%d7%aa%d7%99%d7%9d/" class="product">
+					                        <p class="title">סלסלת תותים</p>
+					                        <p class="price">החל מ 170₪</p>
+					                    </a>
+
+					                </div>
+					            </div>
+					        </div>
+					    </div>
+					    <div class="box">
+					        <a href="http://ftuit.s201.upress.link/product-category/%d7%96%d7%a8%d7%99-%d7%a4%d7%99%d7%a8%d7%95%d7%aa/" class="link"></a>
+					        <div class="inner">
+					            <div class="bg-img"><img src="http://ftuit.s201.upress.link/wp-content/uploads/2019/07/זר-באדנית-2-450x381.png" alt="זרי פירות מעוצבים"></div>
+					            <div class="info">
+					                <a href="http://ftuit.s201.upress.link/product-category/%d7%96%d7%a8%d7%99-%d7%a4%d7%99%d7%a8%d7%95%d7%aa/" class="title">זרי פירות</a>
+
+					                <p class="subtitle">שיפודי פירות קלופים,
+					                    <br>חתוכים וטריים המסודרים
+					                    <br>כזר פירות מהמם
+					                    <br>עכשיו לרשותכם</p>
+					                <div class="products">
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%96%d7%a8-%d7%a4%d7%99%d7%a8%d7%95%d7%aa-%d7%a4%d7%a8%d7%99%d7%97%d7%94/" class="product">
+					                        <p class="title">זר פירות פריחה</p>
+					                        <p class="price">החל מ 240₪</p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%96%d7%a8-%d7%a4%d7%99%d7%a8%d7%95%d7%aa-%d7%91%d7%90%d7%93%d7%a0%d7%99%d7%aa/" class="product">
+					                        <p class="title">זר פירות באדנית</p>
+					                        <p class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₪</span>240</span>
+					                        </p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%96%d7%a8-%d7%a4%d7%99%d7%a8%d7%95%d7%aa-%d7%91%d7%9e%d7%a9%d7%a4%d7%9a/" class="product">
+					                        <p class="title">זר פירות במשפך</p>
+					                        <p class="price">החל מ 320₪</p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%96%d7%a8-%d7%a4%d7%99%d7%a8%d7%95%d7%aa-%d7%99%d7%91%d7%a9%d7%99%d7%9d/" class="product">
+					                        <p class="title">זר פירות יבשים</p>
+					                        <p class="price">החל מ 240₪</p>
+					                    </a>
+
+					                </div>
+					            </div>
+					        </div>
+					    </div>
+					    <div class="box">
+					        <a href="http://ftuit.s201.upress.link/product-category/%d7%9e%d7%92%d7%a9%d7%99-%d7%a1%d7%95%d7%a9%d7%99-%d7%a4%d7%99%d7%a8%d7%95%d7%aa/" class="link"></a>
+					        <div class="inner">
+					            <div class="bg-img"><img src="http://ftuit.s201.upress.link/wp-content/uploads/2019/07/סושי-450x381.png" alt="מגשי סושי פירות"></div>
+					            <div class="info">
+					                <a href="http://ftuit.s201.upress.link/product-category/%d7%9e%d7%92%d7%a9%d7%99-%d7%a1%d7%95%d7%a9%d7%99-%d7%a4%d7%99%d7%a8%d7%95%d7%aa/" class="title">מגשי סושי פירות</a>
+
+					                <p class="subtitle">מגשי סושי נעשים מדפי סויה
+					                    <br>צבעוניים במילוי מחיות –
+					                    <br>ממרחים בטעמים
+					                    <br>ייחודיים לנו!</p>
+					                <div class="products">
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%a1%d7%95%d7%a9%d7%99-%d7%a4%d7%99%d7%a8%d7%95%d7%aa/" class="product">
+					                        <p class="title">סושי פירות</p>
+					                        <p class="price">החל מ 120₪</p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%a1%d7%99%d7%a8%d7%aa-%d7%a1%d7%95%d7%a9%d7%99-%d7%a4%d7%99%d7%a8%d7%95%d7%aa/" class="product">
+					                        <p class="title">סירת סושי פירות</p>
+					                        <p class="price">החל מ 400₪</p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%a6%d7%91%d7%a2%d7%95%d7%a0%d7%99-%d7%91%d7%90%d7%a7%d7%93%d7%9e%d7%99%d7%94-%d7%94%d7%a2%d7%aa%d7%a7-copy-copy/" class="product">
+					                        <p class="title">מגש בשילוב עם סושי</p>
+					                        <p class="price">החל מ 260₪</p>
+					                    </a>
+
+					                </div>
+					            </div>
+					        </div>
+					    </div>
+					    <div class="box">
+					        <a href="http://ftuit.s201.upress.link/product-category/%d7%9e%d7%92%d7%a9%d7%99-%d7%90%d7%99%d7%a8%d7%95%d7%97/" class="link"></a>
+					        <div class="inner">
+					            <div class="bg-img"><img src="http://ftuit.s201.upress.link/wp-content/uploads/2019/06/DSC_4634aS-450x300.jpg" alt="מגש בייגל - איכותי וטעים"></div>
+					            <div class="info">
+					                <a href="http://ftuit.s201.upress.link/product-category/%d7%9e%d7%92%d7%a9%d7%99-%d7%90%d7%99%d7%a8%d7%95%d7%97/" class="title">מגשי אירוח</a>
+
+					                <p class="subtitle">בעקבות ביקוש גבוה
+					                    <br>מצד לקוחותינו פתחנו גם
+					                    <br>את האפשרות להזמין מגוון של
+					                    <br>מגשי אירוח</p>
+					                <div class="products">
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%9e%d7%92%d7%a9-%d7%99%d7%a8%d7%a7%d7%95%d7%aa-%d7%99%d7%a8%d7%95%d7%a7/" class="product">
+					                        <p class="title">מגש ירקות ירוק</p>
+					                        <p class="price">החל מ 150₪</p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%9e%d7%92%d7%a9-%d7%92%d7%91%d7%99%d7%a0%d7%95%d7%aa-%d7%9c%d7%91%d7%9f/" class="product">
+					                        <p class="title">מגש גבינות לבן</p>
+					                        <p class="price">החל מ 230₪</p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%9e%d7%92%d7%a9-%d7%91%d7%99%d7%99%d7%92%d7%9c/" class="product">
+					                        <p class="title">מגש בייגל</p>
+					                        <p class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₪</span>150</span>
+					                        </p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%9e%d7%92%d7%a9-%d7%98%d7%95%d7%a8%d7%98%d7%99%d7%95%d7%aa/" class="product">
+					                        <p class="title">מגש טורטיות</p>
+					                        <p class="price"></p>
+					                    </a>
+
+					                </div>
+					            </div>
+					        </div>
+					    </div>
+					    <div class="box">
+					        <a href="http://ftuit.s201.upress.link/product-category/%d7%9e%d7%95%d7%a6%d7%a8%d7%99%d7%9d-%d7%9e%d7%a9%d7%9c%d7%99%d7%9e%d7%99%d7%9d/" class="link"></a>
+					        <div class="inner">
+					            <div class="bg-img"><img src="http://ftuit.s201.upress.link/wp-content/uploads/2019/06/MG_1296.jpg" alt="מגשי פירות מובחרים"></div>
+					            <div class="info">
+					                <a href="http://ftuit.s201.upress.link/product-category/%d7%9e%d7%95%d7%a6%d7%a8%d7%99%d7%9d-%d7%9e%d7%a9%d7%9c%d7%99%d7%9e%d7%99%d7%9d/" class="title">מוצרים משלימים</a>
+
+					                <p class="subtitle">בעקבות ביקוש גבוה
+					                    <br>מצד לקוחותינו פתחנו גם
+					                    <br>את האפשרות להוסיף מגוון של
+					                    <br>מוצרים משלמים לסלסלות ולמגשי הפירות שלנו</p>
+					                <div class="products">
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%9e%d7%92%d7%a9%d7%95%d7%9f-%d7%99%d7%91%d7%a9%d7%99%d7%9d/" class="product">
+					                        <p class="title">מגשון יבשים</p>
+					                        <p class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₪</span>40</span>
+					                        </p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%91%d7%9c%d7%95%d7%9f-%d7%91%d7%9e%d7%91%d7%97%d7%a8-%d7%a6%d7%91%d7%a2%d7%99%d7%9d/" class="product">
+					                        <p class="title">בלון במבחר צבעים</p>
+					                        <p class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₪</span>9</span>
+					                        </p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%99%d7%99%d7%9f-%d7%a8%d7%96%d7%a8%d7%91-%d7%92%d7%95%d7%95%d7%a8%d7%a6%d7%98%d7%a8%d7%9e%d7%99%d7%a0%d7%a8/" class="product">
+					                        <p class="title">יין רזרב גוורצטרמינר</p>
+					                        <p class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₪</span>90</span>
+					                        </p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%9e%d7%90%d7%a8%d7%96-%d7%9c%d7%99%d7%95%d7%9c%d7%93%d7%aa-%d7%91%d7%9f/" class="product">
+					                        <p class="title">מארז ליולדת בן</p>
+					                        <p class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₪</span>40</span>
+					                        </p>
+					                    </a>
+					                    <a href="http://ftuit.s201.upress.link/product/%d7%a4%d7%a8%d7%a8%d7%95-%d7%a8%d7%95%d7%a9%d7%94-%d7%a7%d7%95%d7%9c%d7%a7%d7%a9%d7%99%d7%99%d7%9f/" class="product">
+					                        <p class="title">פררו רושה קולקשיין</p>
+					                        <p class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₪</span>50</span>
+					                        </p>
+					                    </a>
+
+					                </div>
+					            </div>
+					        </div>
+					    </div>
+
 					</div>
+
+
 				</div>
 				<div class="part part-feedback">
 
@@ -713,6 +956,11 @@
 					<input type="submit" value="שלח" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span>
 					</form></div>
 				</div>
+
+				<div class="message">
+					<p class="fail">לורם איפסום הודעת שגיאה</p>
+					<p class="success">לורם איפסום הודעת שגיאה</p>
+				</div>
 			</div>
 
 			<div class="cols">
@@ -828,6 +1076,10 @@
 	<script>
 		$(document).ready(function ($) {
 
+			$(".fruit-of-the-day .button").on("click", function(){
+				console.log("clicked");
+				$(".fruit-of-the-day .popup").toggleClass("open");
+			});
 			VanillaTilt.init(document.querySelector(".woman"), {
 				"full-page-listening" : true,
 				max: 5,
@@ -863,7 +1115,7 @@
 			});
 
 
-			$( ".slider-products").sliderImgTxt({delay: 5000});
+			//$( ".slider-products").sliderImgTxt({delay: 5000});
 
 			$( ".feedback").sliderThumbs({delay: 5000});
 
